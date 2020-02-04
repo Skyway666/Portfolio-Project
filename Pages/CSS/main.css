@@ -80,3 +80,17 @@
 p{
     font-family: Arial;
 }
+
+/*List item*/
+
+.list_item{
+  display: flex;
+  align-items: center;
+
+  outline: 10px solid red;
+
+}
+
+.list_item:hover{
+  outline: 15px solid green;
+}
