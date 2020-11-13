@@ -4,20 +4,40 @@
       margin-right: 300px;"
   >
     <sui-header size="huge" style="fontSize: 50px"> Lucas García Mateu</sui-header>
-    <sui-segment 
+    <div
       style="fontSize: 20px; 
-      text-align: left;
+      text-align: center;
       line-height: 1.5;"
       padded
     >
-      Lucas es un programador versátil, capaz de aislar y resolver cualquier problema gracias a su 
-      metodologia operativa eficiente y constante. Sin embargo, su perfíl técnico no interfiere con
-      su capacidad de encontrar soluciones creativas y su sentido común a la hora de tomar acción de
-      forma proactiva. Por último, tiene buenas habilidades comunicativas y es honesto, siempre se
-      puede contar con él para hablar de cualquier cosa y nunca esconde los problemas con los que se 
-      encuentra en el desempeño de sus tareas.
-    </sui-segment>
-    <sui-header size="huge" style="fontSize: 40px"> Remarkable projects</sui-header>
+      Wellcome to my portfolio! Here you can find the most remarkable projects that I have worked on so far.
+    </div>
+    <sui-divider/>
+    <sui-item-group
+      style="fontSize: 15px; 
+      text-align: left;
+      line-height: 1.5;"
+    >
+      <sui-item>
+        <sui-item-image :src="require('@/assets/DungeonBrawlerLogo.png')"/>
+        <sui-item-content>
+          <sui-item-header>Dungeon Brawler</sui-item-header>
+          <sui-item-description>
+            <p>
+              Dungeon Brawler is a competitive 2D fighting game, build entirely in C++ by a team of 7 members.
+            </p>
+            <p>
+              We used the graphics of the Capcom classic "Dungeons and Dragons, Shadow over Mystara", but completelly re-designed the game
+              and coded it from scratch. There are 4 playable characters, each one with 13 different moves and and two variations.
+            </p>
+          </sui-item-description>
+          <sui-item-extra>
+            <sui-button @click="openLink('https://angryfrogdev.github.io/Dungeon-Brawler/')"> Webpage </sui-button>
+            <sui-button disabled> See more  </sui-button>
+          </sui-item-extra>
+        </sui-item-content>
+      </sui-item>
+    </sui-item-group>
     <sui-button-group :widths="3">
       <sui-button @click="openLink('https://angryfrogdev.github.io/Dungeon-Brawler/')"> Dungeon Brawler </sui-button>
       <sui-button @click="openLink('https://skyway666.github.io/Kuroko-Engine/')"> Kuroko Engine </sui-button>
