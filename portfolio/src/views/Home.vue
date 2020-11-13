@@ -19,24 +19,23 @@
     </sui-segment>
     <sui-header size="huge" style="fontSize: 40px"> Remarkable projects</sui-header>
     <sui-button-group :widths="3">
-      <sui-button> <a href="https://angryfrogdev.github.io/Dungeon-Brawler/">Dungeon Brawler</a> </sui-button>
-      <sui-button> <a href="https://skyway666.github.io/Kuroko-Engine/"> Kuroko Engine </a> </sui-button>
-      <sui-button> <a href="https://rustiktie.github.io/project-3-bcn/"> Malita, Soul of a Warrior </a> </sui-button>
+      <sui-button @click="openLink('https://angryfrogdev.github.io/Dungeon-Brawler/')"> Dungeon Brawler </sui-button>
+      <sui-button @click="openLink('https://skyway666.github.io/Kuroko-Engine/')"> Kuroko Engine </sui-button>
+      <sui-button @click="openLink('https://rustiktie.github.io/project-3-bcn/')"> Malita, Soul of a Warrior </sui-button>
     </sui-button-group>
     <sui-divider/>
     <sui-button-group :widths="3">
-      <sui-button> <a href="https://mtorresform.wixsite.com/apocalypsetycoonupc"> Apocalypse Tycoon </a> </sui-button>
-      <sui-button> <a href="https://dynamiccast.itch.io/asun"> Asun </a> </sui-button>
-      <sui-button> <a href="https://www.youtube.com/watch?v=y2ManVDD-fM"> Bubble Ball </a> </sui-button>
+      <sui-button @click="openLink('https://mtorresform.wixsite.com/apocalypsetycoonupc')"> Apocalypse Tycoon </sui-button>
+      <sui-button @click="openLink('https://dynamiccast.itch.io/asun')"> Asun </sui-button>
+      <sui-button @click="openLink('https://www.youtube.com/watch?v=y2ManVDD-fM')"> Bubble Ball </sui-button>
     </sui-button-group>
     <sui-divider/>
     <sui-button-group :widths="3">
-      <sui-button> <a href="https://github.com/Skyway666/TFG-investigation"> Mirror </a> </sui-button>
-      <sui-button> <a href="https://github.com/Adria-F/QT-Graphics-Engine"> Advanced graphics engine </a> </sui-button>
-      <sui-button> <a href="https://drive.google.com/drive/folders/1xC-PnGSno5CikSj15lRlQjuQ_unLwy1s"> Swamp Chaos </a> </sui-button>
+      <sui-button @click="openLink('https://github.com/Skyway666/TFG-investigation')"> Mirror </sui-button>
+      <sui-button @click="openLink('https://github.com/Adria-F/QT-Graphics-Engine')"> Advanced graphics engine </sui-button>
+      <sui-button @click="openLink('https://drive.google.com/drive/folders/1xC-PnGSno5CikSj15lRlQjuQ_unLwy1s')"> Swamp Chaos </sui-button>
     </sui-button-group>
   </div>
-  
 </template>
 
 <script>
@@ -44,9 +43,13 @@ export default {
   name: 'Home',
   props: {
     msg: String
+  },
+  methods:{
+    openLink(link){
+      window.open(link);
+    }
   }
 }
-//@click="console.log('https://www.youtube.com/watch?v=rA4eesTbNKE');"
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
