@@ -86,6 +86,27 @@
           </sui-item-extra>
         </sui-item-content>
       </sui-item>
+      <sui-item>
+        <sui-item-image :src="require('@/assets/ATLogo.png')"/>
+        <sui-item-content>
+          <sui-item-header>Apocalypse Tycoon</sui-item-header>
+          <sui-item-description>
+            <p>
+              Apocalypse Tycoon is a "Sims like" AI based game, built in Unity and developed by a team of 2 people. 
+            </p>
+            <p>
+              The object of the game is surviving 5 days on a militar base during a Zombie apocalypse, through efficient managing.
+              There were 4 AI archtypes: Farmer, Militar, Zombie and Pig, and the player can take actions such as buying more Farmers, Militars
+              or Pigs, upgrading the Militars, command them to collect the money droped by the zombies, etc.
+              It features a day/night cycle, where the different AI archetypes would behave differently.
+            </p>
+          </sui-item-description>
+          <sui-item-extra>
+            <sui-button @click="openLink('https://mtorresform.wixsite.com/apocalypsetycoonupc')"> Webpage </sui-button>
+            <sui-button disabled> See more  </sui-button>
+          </sui-item-extra>
+        </sui-item-content>
+      </sui-item>
     </sui-item-group>
     <sui-divider/>
     <sui-button-group :widths="3">
