@@ -24,7 +24,7 @@
           <sui-item-header>Dungeon Brawler</sui-item-header>
           <sui-item-description>
             <p>
-              Dungeon Brawler is a competitive 2D fighting game, build entirely in C++ by a team of 7 members.
+              Dungeon Brawler is a competitive 2D fighting game, build entirely in C++ and developed by a team of 7 members.
             </p>
             <p>
               We used the graphics of the Capcom classic "Dungeons and Dragons, Shadow over Mystara", but completelly re-designed the game
@@ -37,12 +37,56 @@
           </sui-item-extra>
         </sui-item-content>
       </sui-item>
+      <sui-item>
+        <sui-item-image :src="require('@/assets/KurokoLogo.png')"/>
+        <sui-item-content>
+          <sui-item-header>Kuroko Engine</sui-item-header>
+          <sui-item-description>
+            <p>
+              The Kuroko Engine is a 3D game engine built entirely in C++ by a team of 2 members. It uses several libraries to 
+              implement various essential systems, such as a 3D renderer, component based game object system and a resource manager.
+            </p>
+            <p>
+              On top of that, it features a <a href="https://wren.io/">Wren</a> based scripting system, wich effectively separates the 
+              gameplay logic from the rest of systems. 
+            </p>
+            <p>
+              This project was the base for the Atlas engine, used to develop <a href="https://rustiktie.github.io/project-3-bcn/"> Malita, Soul of a Warrior </a>.
+            </p>
+          </sui-item-description>
+          <sui-item-extra>
+            <sui-button @click="openLink('https://skyway666.github.io/Kuroko-Engine/')"> Webpage </sui-button>
+            <sui-button disabled> See more  </sui-button>
+          </sui-item-extra>
+        </sui-item-content>
+      </sui-item>
+      <sui-item>
+        <sui-item-image :src="require('@/assets/MalitaLogo.png')"/>
+        <sui-item-content>
+          <sui-item-header>Malita, Soul of a Warrior</sui-item-header>
+          <sui-item-description>
+            <p>
+              Malita, Soul of a Warrior is a is a fast-paced beat 'em up game inspired by the universe of Battle Angel Alita. It a multidisciplinar project,
+              and the culmination of 3 different subjects of the Bachelor’s Degree in Video Games by UPC at CITM: Engines, Project 3 and Marketing.
+            </p>
+            <p>
+              The game was developed using the Atlas-Project engine, wich used the <a href="https://skyway666.github.io/Kuroko-Engine/"> Kuroko Engine </a> as a base,
+              but was expanded and improved with the results of all the other students that participated in the "Engines" subject, adding the subsystems of Animation,
+              UI, Sound, Shaders, Particles and Physics.
+            </p>
+            <p>
+              During Project 3, the game was developed with the combined efforts of 20 people, divided in Coding, Design and Art departments. Additionally, a 
+              marketing campaign was deployed, through social media (<a href="https://twitter.com/malitathegame">Twitter</a>, <a href="https://www.instagram.com/malitagame/">Instagram</a> and <a href="https://www.youtube.com/channel/UCZKmG8wNjSxjrQ8kdyABiuA">YouTube</a>) and massive
+              email sending. Finally, the game was published in <a href="https://typhoonstudio.itch.io/malita">Itch.io</a>.
+            </p>
+          </sui-item-description>
+          <sui-item-extra>
+            <sui-button @click="openLink('https://rustiktie.github.io/project-3-bcn/')"> Webpage </sui-button>
+            <sui-button disabled> See more  </sui-button>
+          </sui-item-extra>
+        </sui-item-content>
+      </sui-item>
     </sui-item-group>
-    <sui-button-group :widths="3">
-      <sui-button @click="openLink('https://angryfrogdev.github.io/Dungeon-Brawler/')"> Dungeon Brawler </sui-button>
-      <sui-button @click="openLink('https://skyway666.github.io/Kuroko-Engine/')"> Kuroko Engine </sui-button>
-      <sui-button @click="openLink('https://rustiktie.github.io/project-3-bcn/')"> Malita, Soul of a Warrior </sui-button>
-    </sui-button-group>
     <sui-divider/>
     <sui-button-group :widths="3">
       <sui-button @click="openLink('https://mtorresform.wixsite.com/apocalypsetycoonupc')"> Apocalypse Tycoon </sui-button>
