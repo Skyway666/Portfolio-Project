@@ -107,13 +107,50 @@
           </sui-item-extra>
         </sui-item-content>
       </sui-item>
+      <sui-item>
+        <sui-item-image :src="require('@/assets/AsunLogo.png')"/>
+        <sui-item-content>
+          <sui-item-header> Asun </sui-item-header>
+          <sui-item-description>
+            <p>
+              Asun is the result of the first edition of the Gran CITM game jam with the theme "Surprise" ("Sorpresa" in Spanish). It was build in Unity and developed
+              by 4 people in 24 hours, 2 artists and 2 coders, while we all participated in the design. It was awarded with the price to the <a href ="https://www.citm.upc.edu/blog/1a-edicion-enero-2019/">best Design</a>,
+              and later published to itch.io.
+            </p>
+            <p>
+              The game is about a Nun trapped in a prison who is attacked by the guards and has to deffend herself using a crucifix and a holy ball. However, the guards
+              can't be hit directly with the crucifix,  so the player needs to direct the holy ball, which is then capable of hurting the enemies. 
+            </p>
+            <p>
+              The game does resemble the game jam's theme due to wordplay, since "Sor Presa" in spanish means "Prisoner Nun".
+            </p>
+          </sui-item-description>
+          <sui-item-extra>
+            <sui-button @click="openLink('https://dynamiccast.itch.io/asun')"> Webpage </sui-button>
+            <sui-button disabled> See more  </sui-button>
+          </sui-item-extra>
+        </sui-item-content>
+      </sui-item>
+      <sui-item>
+        <sui-item-image :src="require('@/assets/BBLogo.png')"/>
+        <sui-item-content>
+          <sui-item-header> Bubble Ball </sui-item-header>
+          <sui-item-description>
+            <p>
+              Bubble Ball is the result of the second edition of the Gran CITM game jam with the theme "Water". It was build in Unity and developed
+              by 4 people in 24 hours, 2 artists and 2 coders, while we all participated in the design.
+            </p>
+            <p>
+              The game is a 4 player inverted VolleyBall game, where a bubble is the ball and fishes represent the players.
+            </p>
+          </sui-item-description>
+          <sui-item-extra>
+            <sui-button @click="openLink('https://www.youtube.com/watch?v=y2ManVDD-fM')"> Webpage </sui-button>
+            <sui-button disabled> See more  </sui-button>
+          </sui-item-extra>
+        </sui-item-content>
+      </sui-item>
     </sui-item-group>
-    <sui-divider/>
-    <sui-button-group :widths="3">
-      <sui-button @click="openLink('https://mtorresform.wixsite.com/apocalypsetycoonupc')"> Apocalypse Tycoon </sui-button>
-      <sui-button @click="openLink('https://dynamiccast.itch.io/asun')"> Asun </sui-button>
-      <sui-button @click="openLink('https://www.youtube.com/watch?v=y2ManVDD-fM')"> Bubble Ball </sui-button>
-    </sui-button-group>
     <sui-divider/>
     <sui-button-group :widths="3">
       <sui-button @click="openLink('https://github.com/Skyway666/TFG-investigation')"> Mirror </sui-button>
