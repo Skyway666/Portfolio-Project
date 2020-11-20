@@ -150,6 +150,25 @@
           </sui-item-extra>
         </sui-item-content>
       </sui-item>
+      <sui-item>
+        <sui-item-image :src="require('@/assets/MirrorLogo.png')"/>
+        <sui-item-content>
+          <sui-item-header> Mirror </sui-item-header>
+          <sui-item-description>
+            <p>
+              Mirror is a reflection system for C++, developed as my Final Degree Project.
+            </p>
+            <p>
+              The system consists of an application built in C++ which reads the user header files to then generate code which once included
+              into the user's project, can be used to access and use the reflection data.
+            </p>
+          </sui-item-description>
+          <sui-item-extra>
+            <sui-button @click="openLink('https://github.com/Skyway666/TFG-investigation')"> Webpage </sui-button>
+            <sui-button disabled> See more  </sui-button>
+          </sui-item-extra>
+        </sui-item-content>
+      </sui-item>
     </sui-item-group>
     <sui-divider/>
     <sui-button-group :widths="3">
