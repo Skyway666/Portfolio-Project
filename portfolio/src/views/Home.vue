@@ -169,13 +169,52 @@
           </sui-item-extra>
         </sui-item-content>
       </sui-item>
+      <sui-item>
+        <sui-item-image :src="require('@/assets/AGLogo.png')"/>
+        <sui-item-content>
+          <sui-item-header> Advanced graphics engine </sui-item-header>
+          <sui-item-description>
+            <p>
+              This 3D graphics engine was developed in the C++ QT framework by a team of 2 members, using a basic skeleton 
+              provided by the teacher with an openGL implementation.
+            </p>
+            <p>
+              The main aspect of this project is the usage of a deferred renderer to implement techniques such asScreen Space Ambient Occlusion, 
+              3D objects outline, mouse picking using textures and Depth Of Field.
+            </p>
+          </sui-item-description>
+          <sui-item-extra>
+            <sui-button @click="openLink('https://github.com/Adria-F/QT-Graphics-Engine')"> Webpage </sui-button>
+            <sui-button disabled> See more  </sui-button>
+          </sui-item-extra>
+        </sui-item-content>
+      </sui-item>
+       <sui-item>
+        <sui-item-image :src="require('@/assets/SCLogo.png')"/>
+        <sui-item-content>
+          <sui-item-header> Swamp Chaos </sui-item-header>
+          <sui-item-description>
+            <p>
+              Swamp Chaos is a narrative game which features multiple decisions and endings. It was developed using RPGMaker MV, as a delivery for the 
+              "Level Design" subject. The project was based on a one page dungeon with the same name, by Dennis Filipiak.
+            </p>
+            <p>
+              This project showcases my ability as a game designer and creative mind in general, since the project expands on the original material, with more
+              characters and multiple endings. On top of that, it was my first time using RPG maker, so it is also quite acomplished technically. 
+            </p>
+            <p>
+              Finally, the memory generated for the game is a proof of my competence generating documentation. I believe that it is really important
+              to do this for all projects, otherwise, important information tends to be forgotten and then it is harder to iterate down the line.
+            </p>
+          </sui-item-description>
+          <sui-item-extra>
+            <sui-button @click="openLink('https://drive.google.com/drive/folders/1xC-PnGSno5CikSj15lRlQjuQ_unLwy1s')"> Webpage </sui-button>
+            <sui-button disabled> See more  </sui-button>
+          </sui-item-extra>
+        </sui-item-content>
+      </sui-item>
     </sui-item-group>
     <sui-divider/>
-    <sui-button-group :widths="3">
-      <sui-button @click="openLink('https://github.com/Skyway666/TFG-investigation')"> Mirror </sui-button>
-      <sui-button @click="openLink('https://github.com/Adria-F/QT-Graphics-Engine')"> Advanced graphics engine </sui-button>
-      <sui-button @click="openLink('https://drive.google.com/drive/folders/1xC-PnGSno5CikSj15lRlQjuQ_unLwy1s')"> Swamp Chaos </sui-button>
-    </sui-button-group>
   </div>
 </template>
 
