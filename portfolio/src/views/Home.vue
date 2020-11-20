@@ -10,7 +10,7 @@
       line-height: 1.5;"
       padded
     >
-      Wellcome to my portfolio! Here you can find the most remarkable projects that I have worked on so far.
+      Wellcome to my portfolio! Here you can find the most remarkable projects that I have worked on so far (not all of them!):
     </div>
     <sui-divider/>
     <sui-item-group
