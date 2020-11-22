@@ -145,7 +145,7 @@
             </p>
           </sui-item-description>
           <sui-item-extra>
-            <sui-button @click="openLink('https://www.youtube.com/watch?v=y2ManVDD-fM')"> Webpage </sui-button>
+            <sui-button @click="openLink('https://rogerjimbo.itch.io/bubbleball')"> Webpage </sui-button>
             <sui-button disabled> See more  </sui-button>
           </sui-item-extra>
         </sui-item-content>
