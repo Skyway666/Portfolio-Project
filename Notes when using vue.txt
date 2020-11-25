@@ -1,2 +1,3 @@
 npm run serve -> Run development build
 ctrl + c -> Stop running development build
+bash deploy.sh -> Deploy webpage

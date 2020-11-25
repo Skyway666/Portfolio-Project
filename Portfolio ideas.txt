@@ -1,0 +1,24 @@
+// Portfolio consejos
+- Mucho texto en el portfolio
+- Invertir colores
+- Enmarcar párrafos importantes
+
+// New iteration
+- Home: Breve descripción de mi persona y contacto
+
+- Diseño
+	- Juegos
+	- Documentación
+- Programación
+	- Unity
+	- Unreal
+	- C++
+	- Tools
+- About me
+
+
+// Elementos de la página de proyecto
+
+- Descripción (tostón para quién lo quiera)
+- Imagenes + Video
+- Fecha inicial, tiempo de desarrollo, tamaño del equipo, contribuciones y enlaces externos
