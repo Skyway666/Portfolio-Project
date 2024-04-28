@@ -12,7 +12,13 @@
                 Feel free to contact me if my projects spark your interest, I'm a chatty and easy going guy who allways likes talking about development!
             </p>
             <div class="buttons">
-                <sui-button color=black size=big>See CV</sui-button>
+                <router-link 
+                    to="/CV"
+                    custom
+                    v-slot="{navigate}"
+                    >
+                        <sui-button color=black size=big @click="navigate">See CV</sui-button>
+                </router-link>
                 <sui-button color=grey size=big @click="onContactMe">Contact me</sui-button>
             </div>
         </div>

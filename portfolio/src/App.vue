@@ -1,19 +1,20 @@
 <template>
   <div id="app">
-    <div v-if="!isMobile()">
-      <MainMenu/>
+    <div v-if="$route.name !== 'CV'">
+      <div v-if="!isMobile()">
+        <MainMenu/>
+      </div>
+      <div v-else>
+        Barra de navegación movil
+      </div>
     </div>
-    <div v-else>
-      Una gran pollonga movil
-    </div>
+    <router-view/>
 
-    <Home/>
   </div>
 </template>
 
 <script>
 import MainMenu from './components/MainMenu.vue'
-import Home from './views/Home.vue'
 import 'semantic-ui-css/semantic.min.css';
 
 export default {
@@ -22,8 +23,7 @@ export default {
     document.title = "Lucas García Mateu - Developer Portfolio"
   },
   components: { 
-    MainMenu,
-    Home
+    MainMenu
   }
 }
 </script>

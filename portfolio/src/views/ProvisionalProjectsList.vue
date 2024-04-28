@@ -1,9 +1,9 @@
 <template>
   <div style="
+      margin-top: 100px;
       margin-left: 300px;
       margin-right: 300px;"
   >
-    <sui-header size="huge" style="font-size: 50px"> Lucas García Mateu</sui-header>
     <div
       style="font-size: 20px; 
       text-align: center;

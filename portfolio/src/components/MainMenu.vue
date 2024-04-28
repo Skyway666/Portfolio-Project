@@ -1,21 +1,21 @@
 <template>
   <sui-menu class="main-menu" fixed>
-    <div class="menu-title">
+    <router-link class="menu-title" tag="div" to="/">
       Lucas García Mateu
-    </div>
+    </router-link>
     <sui-menu-menu position="right">
-      <div class="menu-button">
+      <router-link class="menu-button" tag="div" to="/">
         Home
-      </div>
-      <div class="menu-button">
+      </router-link>
+      <router-link class="menu-button" tag="div" to="/projects">
         Projects
-      </div>
-      <div class="menu-button">
+      </router-link>
+      <router-link class="menu-button" tag="div" to="/projects">
         Career
-      </div>
-      <div class="menu-button">
+      </router-link>
+      <router-link class="menu-button" tag="div" to="/">
         About
-      </div>
+      </router-link>
     </sui-menu-menu>
   </sui-menu>
 </template>
@@ -34,11 +34,13 @@
   .menu-title{
     font-size: 30px;
     font-weight: bold;
+    cursor: pointer
   }
   .menu-button{
     font-size: 20px;
     font-weight: bold;
     padding: 0px 25px ;
+    cursor: pointer
   }
   </style>
   
