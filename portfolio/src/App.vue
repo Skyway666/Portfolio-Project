@@ -6,15 +6,15 @@
 </template>
 
 <script>
-import Home from './views/Home.vue'
 import MainMenu from './components/MainMenu.vue'
+import Home from './views/Home.vue'
 import 'semantic-ui-css/semantic.min.css';
 
 export default {
   name: 'App',
   components: {
-    Home,
-    MainMenu
+    MainMenu,
+    Home
   }
 }
 </script>

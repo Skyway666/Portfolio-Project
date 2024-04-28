@@ -1,13 +1,21 @@
 <template>
   <sui-menu class="main-menu" fixed>
-    <div class="menu-title-container">
-      <h2>Lucas García Mateu</h2>
+    <div class="menu-title">
+      Lucas García Mateu
     </div>
     <sui-menu-menu position="right">
-      <sui-menu-item>Home</sui-menu-item>
-      <sui-menu-item>Design</sui-menu-item>
-      <sui-menu-item>Programming</sui-menu-item>
-      <sui-menu-item>About</sui-menu-item>
+      <div class="menu-button">
+        Home
+      </div>
+      <div class="menu-button">
+        Projects
+      </div>
+      <div class="menu-button">
+        Career
+      </div>
+      <div class="menu-button">
+        About
+      </div>
     </sui-menu-menu>
   </sui-menu>
 </template>
@@ -21,15 +29,17 @@
 
   <style scoped>
   .main-menu{
-    padding: 10px 20px
+    padding: 25px 60px;
   }
-  .menu-title-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    bottom: 0;
-    width: 15%;
+  .menu-title{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .menu-button{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 25px ;
   }
   </style>
   
