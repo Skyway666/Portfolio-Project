@@ -3,9 +3,9 @@
       margin-left: 300px;
       margin-right: 300px;"
   >
-    <sui-header size="huge" style="fontSize: 50px"> Lucas García Mateu</sui-header>
+    <sui-header size="huge" style="font-size: 50px"> Lucas García Mateu</sui-header>
     <div
-      style="fontSize: 20px; 
+      style="font-size: 20px; 
       text-align: center;
       line-height: 1.5;"
       padded
@@ -14,7 +14,7 @@
     </div>
     <sui-divider/>
     <sui-item-group
-      style="fontSize: 15px; 
+      style="font-size: 15px; 
       text-align: left;
       line-height: 1.5;"
     >

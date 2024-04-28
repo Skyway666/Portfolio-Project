@@ -1,6 +1,12 @@
 <template>
   <div id="app">
-    <MainMenu/>
+    <div v-if="!isMobile()">
+      <MainMenu/>
+    </div>
+    <div v-else>
+      Una gran pollonga movil
+    </div>
+
     <Home/>
   </div>
 </template>
@@ -12,7 +18,10 @@ import 'semantic-ui-css/semantic.min.css';
 
 export default {
   name: 'App',
-  components: {
+  created(){
+    document.title = "Lucas García Mateu - Developer Portfolio"
+  },
+  components: { 
     MainMenu,
     Home
   }
@@ -26,5 +35,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #502c2c;
+  text-wrap: pretty;
 }
 </style>

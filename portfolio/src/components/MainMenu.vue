@@ -34,7 +34,6 @@
   .menu-title{
     font-size: 30px;
     font-weight: bold;
-    text-transform: uppercase;
   }
   .menu-button{
     font-size: 20px;
