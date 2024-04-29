@@ -1,8 +1,6 @@
 <template>
   <div style="
-      margin-top: 100px;
-      margin-left: 300px;
-      margin-right: 300px;"
+      margin: 100px 20%"
   >
     <div
       style="font-size: 20px; 

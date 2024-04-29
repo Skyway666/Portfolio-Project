@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div v-if="$route.name !== 'CV'">
-      <div v-if="!isMobile()">
+      <div v-if="!$isMobile()">
         <MainMenu/>
       </div>
       <div v-else>
@@ -9,7 +9,6 @@
       </div>
     </div>
     <router-view/>
-
   </div>
 </template>
 
