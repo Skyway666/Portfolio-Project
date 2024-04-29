@@ -8,5 +8,9 @@ export const MultiplatformPlugin =
                 return false
                 }
         }
+
+        Vue.prototype.$getMultiplatformClass = function(className){
+            return className.concat(Vue.prototype.$isMobile() ? '-mobile' : '-desktop')
+        }
     }
 }
