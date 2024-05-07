@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div v-if="$route.name !== 'CV'">
-      <div v-if="!$isMobile()">
+      <div v-if="$isLandscape()">
         <MainMenu/>
       </div>
       <div v-else>
@@ -28,12 +28,12 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #502c2c;
-  text-wrap: pretty;
-}
+    #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #502c2c;
+    text-wrap: pretty;
+  }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1 class="title">I am Lucas</h1>
-        <div :class="$getMultiplatformClass('body')">
+        <div class="body">
             <p>
                 Welcome to my Developer Portfolio!
             </p>
@@ -45,16 +45,20 @@ export default {
     .body-desktop, .body-mobile{
         font-size: 18px;
     }
-    .body-desktop{
+    .body{
         padding: 0px 35%;
-    }
-    .body-mobile{
-        padding: 0px 5%
     }
     .buttons{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        padding-top: 30px
+        padding-top: 30px;
+    }
+
+    /*Portrait*/
+    @media (max-width: 480px){
+        .body{
+            padding: 0px 5%;
+        }
     }
 </style>
