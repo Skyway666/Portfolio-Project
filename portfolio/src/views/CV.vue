@@ -1,16 +1,18 @@
 <template>
     <div class="page-background">
-        <div class="page-section">
+        <!-- Left-->
+        <div class="page-column">
+            <div class="profile-container">
+                <p class="name">LUCAS GARCÍA MATEU</p>
+                <p class="position">Game Developer</p>
+                <img :src="require('@/assets/CV/LucasGarciaMateu.png')" 
+                width="270px"
+                height="270px"/>
+            </div>
 
-            <p class="name">LUCAS GARCÍA MATEU</p>
-            <p class="position">Game Developer</p>
-            <img :src="require('@/assets/CV/LucasGarciaMateu.png')" 
-            width="200px"
-            height="200px"/>
-
-            <div class="contact-container">
+            <div class="section-container">
+                <div class="section-title">Contact</div>
                 <sui-list>
-                    <!-- Both -->
                     <sui-list-item icon="phone">
                         <sui-list-content>
                             <span>+34 646444233</span>
@@ -42,18 +44,58 @@
                     </sui-list-item>
                 </sui-list>
             </div>
+            <div class="section-container">
+                <div class="section-title" style="margin-bottom:30px">Education</div>
+                <Timeline dotSize="10px" :events="education">
+                    <template v-slot:timeline-event-content="slotProps">
+                        <div 
+                        class="timeline-event-content"
+                        :style="slotProps.isLast ? 
+                            'font-weight: bold; font-size:15px'
+                            : 
+                            ''"
+                        >
+                            <div>{{ slotProps.event.title }}</div>
+                            <div>{{ slotProps.event.details }}</div>
+                        </div>
+                    </template>
+                </Timeline>
+            </div>
         </div>
+        <!-- Center-->
         <div class="page-section">
             
         </div>
+        <!-- Right-->
         <div class="page-section">
 
         </div>
     </div>
 </template>
 <script>
+import Timeline from '../components/Timeline.vue';
+
 export default {
-    
+    name: 'CV',
+    components: {
+        Timeline
+    },
+    data(){
+        return {
+            education: [
+                {
+                    title: 'Technical High School', 
+                    details: '(Emperador Carles, 2014-1016)',
+                    eventHeight: 50
+
+                },
+                { 
+                    title: 'Bachelor’s Degree in Videogames', 
+                    details: '(UPC at CITM, 2016-2020)'
+                }
+            ]
+        }
+    }
 }
 </script>
 <style scoped>
@@ -83,13 +125,11 @@ export default {
 
     }
 
-    .page-section{
-        flex-grow: 0;
-        flex-shrink: 0;
+    .page-column{
         flex-basis: calc(100% / 3);
         display: flex;
         align-items: flex-start;
-        align-content: flex-end;
+        justify-content: space-between;
         flex-direction: column;
     }
 
@@ -100,6 +140,9 @@ export default {
     }
 
     /*Left section*/
+    .profile-container{
+        text-align: left;
+    }
     .name{
         font-size: 30px;
         margin: 0;
@@ -109,9 +152,20 @@ export default {
         font-size: 20px;
     }
 
-    .contact-container{
-        margin-top: 30px;
+    .section-title{
+        font-size: 25px;
+    }
+
+
+    .section-container{
         text-align: left;
+    }
+
+    .timeline-event-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        transform: translateY(0);
     }
 
     @media print{
