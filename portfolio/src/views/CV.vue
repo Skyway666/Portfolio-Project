@@ -65,12 +65,11 @@
                 <div class="section-container">
                 <div class="section-title">Hobbies</div>
                 <div>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <sui-list bulleted>
+                        <sui-list-item>Martial Arts</sui-list-item>
+                        <sui-list-item>Videogames</sui-list-item>
+                        <sui-list-item>Content Creation</sui-list-item>
+                    </sui-list>
                 </div>
             </div>
             <div class="section-container">
@@ -123,12 +122,12 @@ export default {
                     display: "Portfolio"
                 },
                 {
-                    icon: "linkify",
+                    icon: "github",
                     href: "https://github.com/Skyway666",
                     display: "Github"
                 },
                 {
-                    icon: "linkify",
+                    icon: "linkedin",
                     href: "https://www.linkedin.com/in/lucas-garc%C3%ADa-mateu-517a0b160/",
                     display: "Linked In"
                 }
@@ -222,6 +221,7 @@ export default {
         padding: 30px 30px;
         display: flex;
         flex-direction: row;
+        margin: auto;
     }
 
     .left-page-column{

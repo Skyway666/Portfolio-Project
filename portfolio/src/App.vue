@@ -1,13 +1,14 @@
 <template>
   <div id="app">
-    <div v-if="$route.name !== 'CV'">
+    <div v-if="$route.name !== 'CV'" style="padding-bottom:100px">
       <div v-if="$isLandscape()">
         <MainMenu/>
       </div>
       <div v-else>
-        Barra de navegación movil
+        Movile navigation bar
       </div>
     </div>
+
     <router-view/>
   </div>
 </template>
@@ -32,9 +33,9 @@ export default {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    text-wrap: pretty;
     display: flex;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
   }
 </style>

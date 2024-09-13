@@ -10,10 +10,10 @@
       <router-link class="menu-button" tag="div" to="/projects">
         Projects
       </router-link>
-      <router-link class="menu-button" tag="div" to="/projects">
+      <router-link class="menu-button" tag="div" to="/career">
         Career
       </router-link>
-      <router-link class="menu-button" tag="div" to="/">
+      <router-link class="menu-button" tag="div" to="/about">
         About
       </router-link>
     </sui-menu-menu>

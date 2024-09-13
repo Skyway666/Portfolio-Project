@@ -40,7 +40,7 @@ export default {
 <style scoped>
     .title{
         font-size: 70px;
-        padding-top: 250px;
+        padding-top: 150px;
     }
     .body-desktop, .body-mobile{
         font-size: 18px;

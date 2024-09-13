@@ -1,6 +1,6 @@
 <template>
   <div style="
-      margin: 100px 20%"
+      margin: 0 20%"
   >
     <div
       style="font-size: 20px; 
