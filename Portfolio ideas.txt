@@ -1,21 +1,17 @@
-// Portfolio consejos
-- Mucho texto en el portfolio
-- Invertir colores
-- Enmarcar párrafos importantes
-
 // New iteration
 - Home: Breve descripción de mi persona y contacto
-
-- Diseño
-	- Juegos
-	- Documentación
-- Programación
-	- Unity
-	- Unreal
-	- C++
-	- Tools
-- About me
-
+- Proyectos: Tabla de proyectos con posibilidad de filtrado
+- Career: Hitos relevantes de mi trayectoria profesional (estudio y trabajo)
+- About me: Pequeña sección personal
+	- https://www.iamtamara.design/about
+	- https://www.byalicelee.com/about
+	- https://www.homsweethom.com/about
+	- https://www.murielvega.net/about
+	- https://www.dalyabaron.com/personal
+- CV: Currículum Vitae web
+	- https://www.dmuhurdar.com/resume/
+	- https://www.dalyabaron.com/resume
+	
 
 // Elementos de la página de proyecto
 
