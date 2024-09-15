@@ -2,16 +2,20 @@
 - Home: Breve descripción de mi persona y contacto
 - Proyectos: Tabla de proyectos con posibilidad de filtrado
 - Career: Hitos relevantes de mi trayectoria profesional (estudio y trabajo)
+	- https://davidjmoldes.wixsite.com/davidgamedesign/cv
+	- https://www.dmuhurdar.com/resume/
+	- https://www.dalyabaron.com/resume
+	
 - About me: Pequeña sección personal
 	- https://www.iamtamara.design/about
 	- https://www.byalicelee.com/about
 	- https://www.homsweethom.com/about
 	- https://www.murielvega.net/about
 	- https://www.dalyabaron.com/personal
+
+	- Sections: Origins, Martial Arts, Content Creation
 - CV: Currículum Vitae web
-	- https://www.dmuhurdar.com/resume/
-	- https://www.dalyabaron.com/resume
-	
+
 
 // Elementos de la página de proyecto
 

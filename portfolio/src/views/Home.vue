@@ -42,9 +42,6 @@ export default {
         font-size: 70px;
         padding-top: 150px;
     }
-    .body-desktop, .body-mobile{
-        font-size: 18px;
-    }
     .body{
         padding: 0px 35%;
     }
