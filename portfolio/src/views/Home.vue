@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="background">
         <h1 class="title">I am Lucas</h1>
         <div class="body">
             <p>
@@ -40,7 +40,7 @@ export default {
 <style scoped>
     .title{
         font-size: 70px;
-        padding-top: 150px;
+        margin-top: -10vh;
     }
     .body{
         padding: 0px 35%;
