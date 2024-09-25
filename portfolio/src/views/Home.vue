@@ -1,5 +1,5 @@
 <template>
-    <div class="background">
+    <div>
         <h1 class="title">I am Lucas</h1>
         <div class="body">
             <p>

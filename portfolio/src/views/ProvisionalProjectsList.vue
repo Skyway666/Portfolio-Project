@@ -2,15 +2,6 @@
   <div style="
       margin: 0 20%"
   >
-    <div
-      style="font-size: 20px; 
-      text-align: center;
-      line-height: 1.5;"
-      padded
-    >
-      Wellcome to my portfolio! Here you can find the most remarkable projects that I have worked on so far (not all of them!):
-    </div>
-    <sui-divider/>
     <sui-item-group
       style="font-size: 15px; 
       text-align: left;
