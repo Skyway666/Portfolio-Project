@@ -1,14 +1,18 @@
 <template>
-  <div id="app">
+  <div :class="`app ${mainViewClass}`">
+    <!-- Show main menu only if the current view is not CV -->
     <div v-if="$route.name !== 'CV'" style="padding-bottom:100px">
+      <!-- Desktop main menu -->
       <div v-if="$isLandscape()">
         <MainMenu/>
       </div>
+      <!-- Mobile main menu -->
       <div v-else>
         Movile navigation bar
       </div>
     </div>
 
+    <!-- Main view -->
     <router-view/>
   </div>
 </template>
@@ -24,12 +28,17 @@ export default {
   },
   components: { 
     MainMenu
+  },
+  computed:{
+    mainViewClass(){
+      return this.$route.name !== 'CV' ? "main-view" : ""; 
+    }
   }
 }
 </script>
 
 <style scoped>
-    #app {
+    .app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -37,6 +46,18 @@ export default {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    align-items: center;
     min-height: 100%;
+  }
+
+  .main-view{
+    padding: 0% 20%;
+  }
+
+  /*Portrait*/
+  @media (max-width: 480px){
+    .main-view{
+        padding: 0px 5%;
+    }
   }
 </style>

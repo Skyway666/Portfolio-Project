@@ -1,5 +1,5 @@
 <template>
-  <div class="background">
+  <div>
     <div v-for="(careerSection, index) in careerSections" :key="index">
       <div class="career-section">
         <div class="career-section-block">
@@ -53,6 +53,21 @@ export default {
                 time: "X-Y",
                 title: "Title Sample",
                 description: "Description Sample"
+              },
+              {
+                time: "X-Y",
+                title: "Title Sample",
+                description: "Description Sample"
+              },
+              {
+                time: "X-Y",
+                title: "Title Sample",
+                description: "Description Sample"
+              },
+              {
+                time: "X-Y",
+                title: "Title Sample",
+                description: "Description Sample"
               }
             ]
         },
@@ -73,7 +88,37 @@ export default {
                 time: "X-Y",
                 title: "Title Sample",
                 description: "Description Sample"
-              }
+              },
+              {
+                time: "X-Y",
+                title: "Title Sample",
+                description: "Description Sample"
+              },
+              {
+                time: "X-Y",
+                title: "Title Sample",
+                description: "Description Sample"
+              },
+              {
+                time: "X-Y",
+                title: "Title Sample",
+                description: "Description Sample"
+              },
+              {
+                time: "X-Y",
+                title: "Title Sample",
+                description: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas"
+              },
+              {
+                time: "X-Y",
+                title: "Title Sample",
+                description: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas"
+              },            
+              {
+                time: "X-Y",
+                title: "Title Sample",
+                description: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas"
+              },
             ]
         }
       ]
@@ -83,9 +128,6 @@ export default {
 </script>
 
 <style scoped>
-  .background{
-    padding: 0% 20%;
-  }
   .career-section{
     display: flex;
     flex-direction: row;
@@ -103,7 +145,6 @@ export default {
     display: flex;
     flex-direction: column;
     text-align: left;
-    /*padding-left: 50%;*/
   }
   .milestone{
     display: flex;

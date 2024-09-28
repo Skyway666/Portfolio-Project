@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="background">
         <h1 class="title">I am Lucas</h1>
-        <div class="body">
+        <div>
             <p>
                 Welcome to my Developer Portfolio!
             </p>
@@ -38,24 +38,17 @@ export default {
 
 
 <style scoped>
+    .background{
+        max-width: 500px;
+    }
     .title{
         font-size: 70px;
         margin-top: -10vh;
-    }
-    .body{
-        padding: 0px 35%;
     }
     .buttons{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         padding-top: 30px;
-    }
-
-    /*Portrait*/
-    @media (max-width: 480px){
-        .body{
-            padding: 0px 5%;
-        }
     }
 </style>

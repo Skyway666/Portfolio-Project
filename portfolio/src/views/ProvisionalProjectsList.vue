@@ -1,7 +1,5 @@
 <template>
-  <div style="
-      margin: 0 20%"
-  >
+  <div>
     <sui-item-group
       style="font-size: 15px; 
       text-align: left;

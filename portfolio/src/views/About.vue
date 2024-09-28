@@ -82,7 +82,6 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0px 20% 50px 20%;
   }
   .main-title{
     font-size: 50px;
@@ -121,15 +120,5 @@ export default {
     display: block; 
     border-radius: 50px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
-  } 
-
-    /*Portrait*/
-    @media (max-width: 480px){
-        .background{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          padding: 0px 5%;
-        }
-    }
+  }
 </style>
