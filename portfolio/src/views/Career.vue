@@ -2,12 +2,12 @@
   <div>
     <div v-for="(careerSection, index) in careerSections" :key="index">
       <div class="career-section">
-        <div class="career-section-block">
+        <div style="width: 30%">
           <div class="career-section-title">
             {{careerSection.title}}
           </div>
         </div>
-        <div class="career-section-block">
+        <div style="width: 70%">
           <div class="career-section-milestones" v-for="(milestone, index) in careerSection.milestones" :key="index">
             <div class="milestone">
               <div class="milestone-date">
@@ -40,84 +40,34 @@ export default {
             title: "Professional",
             milestones: [
               {
-                time: "X-Y",
-                title: "Title Sample",
-                description: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas"
+                time: "2020 (November) - Now",
+                title: "Senior Programmer - Sngular",
+                description: "I came to know of Sngular when I was hired as a freelancer to work in the 'WeirdPirates' videogame project. After 3 months, I was hired as a Junior employee.\n\nIn the span of 4 years I have worked in videogame, museum and internal tools projects as well as performed important installation trips, being promoted to Senior."
               },
               {
-                time: "X-Y",
-                title: "Title Sample",
-                description: "Description Sample"
+                time: "2020 (July - November)",
+                title: "Dungeon Dome",
+                description: "Prototype blockchain project consisting on creating a Dungeon Crawler experience where the characters would be NFTs using the ethereum network. Our own token was created using Solidity."
               },
               {
-                time: "X-Y",
-                title: "Title Sample",
-                description: "Description Sample"
+                time: "2020 (February - April)",
+                title: "Internship - FineCortex",
+                description: "As a part of my college degree I participated in an Internship working with web technology, which ended up abruptly because of COVID. The project was about the creation of a library of UI components using Vue, and the knowledge aquired during it has enabled me to build this website."
               },
-              {
-                time: "X-Y",
-                title: "Title Sample",
-                description: "Description Sample"
-              },
-              {
-                time: "X-Y",
-                title: "Title Sample",
-                description: "Description Sample"
-              },
-              {
-                time: "X-Y",
-                title: "Title Sample",
-                description: "Description Sample"
-              }
             ]
         },
         {
             title: "Education",
             milestones: [
               {
-                time: "X-Y",
-                title: "Title Sample",
-                description: "Description Sample"
+                time: "2016-2020",
+                title: "Bachelor’s Degree in Videogames - CITM (UPC)",
+                description: "A multidisciplinary videogame degree with a strong low level programming curriculum, solid design subjects and useful artistic lessons."
               },
               {
-                time: "X-Y",
-                title: "Title Sample",
-                description: "Description Sample"
-              },
-              {
-                time: "X-Y",
-                title: "Title Sample",
-                description: "Description Sample"
-              },
-              {
-                time: "X-Y",
-                title: "Title Sample",
-                description: "Description Sample"
-              },
-              {
-                time: "X-Y",
-                title: "Title Sample",
-                description: "Description Sample"
-              },
-              {
-                time: "X-Y",
-                title: "Title Sample",
-                description: "Description Sample"
-              },
-              {
-                time: "X-Y",
-                title: "Title Sample",
-                description: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas"
-              },
-              {
-                time: "X-Y",
-                title: "Title Sample",
-                description: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas"
-              },            
-              {
-                time: "X-Y",
-                title: "Title Sample",
-                description: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas"
+                time: "2014-2016",
+                title: "Technical Highschool - Emperador Carles",
+                description: "Highschool studies before entering college, my physics and maths base."
               },
             ]
         }
@@ -162,5 +112,6 @@ export default {
   .milestone-data-title{
     font-size: 20px;
     font-weight: bold;
+    margin-bottom : 10px;
   }
 </style>

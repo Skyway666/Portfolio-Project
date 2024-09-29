@@ -48,6 +48,7 @@ export default {
     justify-content: center;
     align-items: center;
     min-height: 100%;
+    white-space: pre-line;
   }
 
   .main-view{

@@ -53,7 +53,7 @@
             </div>
             <div class="section-container">
                 <div class="section-title">Professional</div>
-                <div>4 years as a developer in <a href="https://www.sngular.com/es/">Sngular</a> where I went from Junior to Senior developer. 
+                <div>4 years as a developer in <a href="https://www.sngular.com/es/">Sngular</a> where I went from Junior to Senior developer.
                     <br><br>
                     I've worked in Videgame, Museum and internal tools projects, taking part in technical leading roles and participating on crucial
                     installation and business trips to the middle east.
