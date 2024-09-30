@@ -182,7 +182,7 @@ export default {
                 },
                 {
                     title: "SOA",
-                    titleHref: "",
+                    titleHref: "https://www.youtube.com/watch?v=raQ3iHhE_Kk",
                     description: "Scriptable Objects Architecture package built for Unity"
                 },
                 {
