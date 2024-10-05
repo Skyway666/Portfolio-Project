@@ -12,13 +12,7 @@
                 Feel free to contact me if my projects spark your interest, I'm a chatty and easy going guy who allways likes talking about development!
             </p>
             <div class="buttons">
-                <router-link 
-                    to="/CV"
-                    custom
-                    v-slot="{navigate}"
-                    >
-                        <sui-button color=black size=big @click="navigate">See CV</sui-button>
-                </router-link>
+                <sui-button color=black size=big @click="onDownloadCV">Download CV</sui-button>
                 <sui-button color=grey size=big @click="onContactMe">Contact me</sui-button>
             </div>
         </div>
@@ -31,6 +25,14 @@ export default {
     methods: {
         onContactMe(){
             window.location = "mailto:lucasgaricamateu@gmail.com"
+        },
+        onDownloadCV(){
+            const link = document.createElement('a');
+            link.href = '/Lucas García Mateu - CV.pdf'; // Replace with your file path
+            link.download = 'Lucas Garcia Mateu - CV.pdf'; // Optional: Set the default file name
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         }
     }
 }
