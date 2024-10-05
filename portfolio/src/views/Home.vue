@@ -6,10 +6,10 @@
                 Welcome to my Developer Portfolio!
             </p>
             <p>
-                My passion for videogames led me to study game development, where I fell in love with transforming data. Since I like and am proud of my work, I created this place place to keep track of it and share it with the world.
+                My passion for videogames led me to study game development, where I fell in love with transforming data. Since I like and am proud of my work, I created this place to keep track of it and share it with the world.
             </p>
             <p>
-                Feel free to contact me if my projects spark your interest, I'm a chatty and easy going guy who allways likes talking about development!
+                Feel free to contact me if my projects spark your interest, I'm a chatty and easy going guy who always likes talking about development!
             </p>
             <div class="buttons">
                 <sui-button color=black size=big @click="onDownloadCV">Download CV</sui-button>
@@ -28,7 +28,7 @@ export default {
         },
         onDownloadCV(){
             const link = document.createElement('a');
-            link.href = '/Lucas García Mateu - CV.pdf'; // Replace with your file path
+            link.href = 'downloads/Lucas Garcia Mateu - CV.pdf'; // Replace with your file path
             link.download = 'Lucas Garcia Mateu - CV.pdf'; // Optional: Set the default file name
             document.body.appendChild(link);
             link.click();
