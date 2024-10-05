@@ -2,16 +2,9 @@
   <div :class="`app ${mainViewClass}`">
     <!-- Show main menu only if the current view is not CV -->
     <div v-if="$route.name !== 'CV'" style="padding-bottom:100px">
-      <!-- Desktop main menu -->
-      <div v-if="$isLandscape()">
-        <MainMenu/>
-      </div>
-      <!-- Mobile main menu -->
-      <div v-else>
-        Movile navigation bar
-      </div>
+      <MainMenu/>
     </div>
-
+    
     <!-- Main view -->
     <router-view/>
   </div>
