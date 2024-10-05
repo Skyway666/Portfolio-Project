@@ -2,26 +2,22 @@
   <div>
     <div v-for="(careerSection, index) in careerSections" :key="index">
       <div class="career-section">
-        <div style="width: 30%">
-          <div class="career-section-title">
-            {{careerSection.title}}
-          </div>
+        <div class="career-section-title">
+          {{careerSection.title}}
         </div>
-        <div style="width: 70%">
-          <div class="career-section-milestones" v-for="(milestone, index) in careerSection.milestones" :key="index">
-            <div class="milestone">
-              <div class="milestone-date">
+        <div class="career-section-milestones" >
+          <div class="milestone" v-for="(milestone, index) in careerSection.milestones" :key="index">
+            <div v-if="$isLandscape()" class="milestone-date">
+              {{milestone.time}}
+            </div>
+            <div class="milestone-data">
+              <div class="milestone-data-title" v-html="milestone.title"/>
+              <div v-if="!$isLandscape()" class="milestone-date">
                 {{milestone.time}}
               </div>
-              <div class="milestone-data">
-                <div class="milestone-data-title">
-                  {{milestone.title}}
-                </div>
-                <div>
-                  {{milestone.description}}
-                </div>
+              <div>
+                {{milestone.description}}
               </div>
-
             </div>
           </div>
         </div>
@@ -41,7 +37,7 @@ export default {
             milestones: [
               {
                 time: "2020 (November) - Now",
-                title: "Senior Programmer - Sngular",
+                title: `Senior Programmer - <a href="https://www.sngular.com">Sngular</a>`,
                 description: "I came to know of Sngular when I was hired as a freelancer to work in the 'WeirdPirates' videogame project. After 3 months, I was hired as a Junior employee.\n\nIn the span of 4 years I have worked in videogame, museum and internal tools projects as well as performed important installation trips, being promoted to Senior."
               },
               {
@@ -51,7 +47,7 @@ export default {
               },
               {
                 time: "2020 (February - April)",
-                title: "Internship - FineCortex",
+                title: `Internship - <a href="https://finecortex.com/">FineCortex</a>`,
                 description: "As a part of my college degree I participated in an Internship working with web technology, which ended up abruptly because of COVID. The project was about the creation of a library of UI components using Vue, and the knowledge aquired during it has enabled me to build this website."
               },
             ]
@@ -61,7 +57,7 @@ export default {
             milestones: [
               {
                 time: "2016-2020",
-                title: "Bachelor’s Degree in Videogames - CITM (UPC)",
+                title: `<a href="https://www.citm.upc.edu/cat/estudis/graus-videojocs/">Bachelor’s Degree in Videogames</a> - CITM (UPC)`,
                 description: "A multidisciplinary videogame degree with a strong low level programming curriculum, solid design subjects and useful artistic lessons."
               },
               {
@@ -90,11 +86,11 @@ export default {
     text-align: left;
     font-size: 30px;
     font-weight: bold;
+    width: 30%;
   }
   .career-section-milestones{
-    display: flex;
-    flex-direction: column;
     text-align: left;
+    width: 70%;
   }
   .milestone{
     display: flex;
@@ -113,5 +109,34 @@ export default {
     font-size: 20px;
     font-weight: bold;
     margin-bottom : 10px;
+  }
+
+  /*Portrait*/
+  @media (max-width: 480px){
+    .career-section{
+      flex-direction: column;
+    }
+    .career-section-block{
+      width: 100%;
+    }
+    .career-section-title{
+      width: 100%;
+      margin-bottom: 25px;
+    }
+    .career-section-milestones{
+      text-align: left;
+      width: 100%;
+    }
+    .milestone{
+      flex-direction: column;
+    }
+    .milestone-date{
+      width: 100%;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    .milestone-data{
+      width: 100%;
+    }
   }
 </style>
