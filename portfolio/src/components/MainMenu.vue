@@ -32,7 +32,7 @@
         vertical
       >
         <sui-menu-item v-for="(menuItem, index) in menuItems" :key="index">
-          <router-link class="menu-button" tag="div" :to="menuItem.to">
+          <router-link class="menu-button" tag="div" :to="menuItem.to" @click.native="onPortraitMenuClicked">
             {{menuItem.text}}
           </router-link>
         </sui-menu-item>
@@ -69,12 +69,15 @@
     },
     methods: {
       onPortraitMenuToggled(){
-        this.portraitMenuExpanded = !this.portraitMenuExpanded
+        this.portraitMenuExpanded = !this.portraitMenuExpanded;
+      },
+      onPortraitMenuClicked(){
+        this.portraitMenuExpanded = false;
       }
     },
     computed: {
       namePosition(){
-        return this.$isLandscape() ? "left" : "right"
+        return this.$isLandscape() ? "left" : "right";
       }
     }
   }
