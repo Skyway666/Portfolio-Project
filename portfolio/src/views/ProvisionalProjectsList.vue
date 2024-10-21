@@ -30,7 +30,34 @@ export default {
     return {
       projects: [
         {
-          imagePath: require('@/assets/DungeonBrawlerLogo.png'),
+          imagePath: require('@/assets/projects/ArchanoLogo.png'),
+          title: 'Archano',
+          description: 
+          `<a href="https://play.google.com/store/apps/details?id=com.habby.archero&hl=es_419">Archero</a> like game themed with a cute necromancer mage. The player would charge mana by hitting the enemies with orbs while moving and then spend it unleashing devastating spell combinations when standing still. Additionally, some enemies could be revived as zombies to aid the player in his malevolent journy
+          
+          The game's development was a partnership with <a href="https://www.homagames.com/">HOMA</a>. It lasted for one month after which it released with a marketing campaign with the objective of analysing its metrics and check the projects viability and possible iteration points.`,
+          webLink: 'https://play.google.com/store/apps/details?id=com.Sngular.Revolver&pli=1'
+        },
+        {
+          imagePath: require('@/assets/projects/RRLogo.png'),
+          title: 'Robot Revolver',
+          description: 
+          `<a href="https://play.google.com/store/apps/details?id=com.habby.archero&hl=es_419">Archero</a> like game themed with robots in the wild west. As a unique mechanic, the player would shoot while moving and reload by standing still.
+          
+          The game's development was a partnership with <a href="https://www.homagames.com/">HOMA</a>. It lasted for one month after which it released with a marketing campaign with the objective of analysing its metrics and check the projects viability and possible iteration points.`,
+          webLink: 'https://play.google.com/store/apps/details?id=com.Sngular.Revolver&pli=1'
+        },
+        {
+          imagePath: require('@/assets/projects/ONSBLogo.png'),
+          title: 'Om Nom Sea Brawl',
+          description: 
+          `Strategy mobile game with the OmNom IP in collaboration with <a href="https://www.zeptolab.com/">Zeptolab</a>. The gameplay, inspired mainly in <a href="https://www.battlelegion.com/">Battle Legion</a>, allows the user to progress through puzzle like levels in which in which the positioning of units in the battlefield is key as well as the usage of powerful vodoo spells. It also features an economy system where the user can spend the resources earned by beating the levels in purchasing improvements for their army.
+          
+          The development lasted for 6 months, during which focus test where performed to ensure the success of the release. Unfortunatelly it was cancelled due to the metrics no reaching the expected results.`,
+          webLink: 'https://www.youtube.com/watch?v=DX_WiFLyFMI'
+        },
+        {
+          imagePath: require('@/assets/projects/DungeonBrawlerLogo.png'),
           title: 'Dungeon Brawler',
           description: 
           `Dungeon Brawler is a competitive 2D fighting game, build entirely in C++ and developed by a team of 7 members.
@@ -39,7 +66,7 @@ export default {
           webLink: 'https://angryfrogdev.github.io/Dungeon-Brawler/'
         },
         {
-          imagePath: require('@/assets/KurokoLogo.png'),
+          imagePath: require('@/assets/projects/KurokoLogo.png'),
           title: 'Kuroko Engine',
           description: 
           `The Kuroko Engine is a 3D game engine built entirely in C++ by a team of 2 members. It uses several libraries to implement various essential systems, such as a 3D renderer, component based game object system and a resource manager.
@@ -50,7 +77,7 @@ export default {
           webLink: 'https://skyway666.github.io/Kuroko-Engine/'
         },
         {
-          imagePath: require('@/assets/MalitaLogo.png'),
+          imagePath: require('@/assets/projects/MalitaLogo.png'),
           title: 'Malita, Soul of a Warrior',
           description: 
           `Malita, Soul of a Warrior is a is a fast-paced beat 'em up game inspired by the universe of Battle Angel Alita. It a multidisciplinar project, and the culmination of 3 different subjects of the Bachelor’s Degree in Video Games by UPC at CITM: Engines, Project 3 and Marketing.
@@ -61,7 +88,7 @@ export default {
           webLink: 'https://rustiktie.github.io/project-3-bcn/'
         },
         {
-          imagePath: require('@/assets/ATLogo.png'),
+          imagePath: require('@/assets/projects/ATLogo.png'),
           title: 'Apocalypse Tycoon',
           description: 
           `Apocalypse Tycoon is a "Sims like" AI based game, built in Unity and developed by a team of 2 people.
@@ -70,7 +97,7 @@ export default {
           webLink: 'https://mtorresform.wixsite.com/apocalypsetycoonupc'
         },
         {
-          imagePath: require('@/assets/AsunLogo.png'),
+          imagePath: require('@/assets/projects/AsunLogo.png'),
           title: 'Asun',
           description: 
           `Asun is the result of the first edition of the Gran CITM game jam with the theme "Surprise" ("Sorpresa" in Spanish). It was build in Unity and developed by 4 people in 24 hours, 2 artists and 2 coders, while we all participated in the design. It was awarded with the price to the <a href ="https://www.citm.upc.edu/blog/1a-edicion-enero-2019/">best Design</a>, and later published to itch.io.
@@ -81,7 +108,7 @@ export default {
           webLink: 'https://dynamiccast.itch.io/asun'
         },
         {
-          imagePath: require('@/assets/BBLogo.png'),
+          imagePath: require('@/assets/projects/BBLogo.png'),
           title: 'Bubble Ball',
           description: 
           `Bubble Ball is the result of the second edition of the Gran CITM game jam with the theme "Water". It was build in Unity and developed by 4 people in 24 hours, 2 artists and 2 coders, while we all participated in the design.
@@ -90,7 +117,7 @@ export default {
           webLink: 'https://rogerjimbo.itch.io/bubbleball'
         },
         {
-          imagePath: require('@/assets/MirrorLogo.png'),
+          imagePath: require('@/assets/projects/MirrorLogo.png'),
           title: 'Mirror',
           description: 
           `Mirror is a reflection system for C++, developed as my Final Degree Project.
@@ -99,7 +126,7 @@ export default {
           webLink: 'https://github.com/Skyway666/TFG-investigation'
         },
         {
-          imagePath: require('@/assets/AGLogo.png'),
+          imagePath: require('@/assets/projects/AGLogo.png'),
           title: 'Advanced graphics engine',
           description: 
           `This 3D graphics engine was developed in the C++ QT framework by a team of 2 members, using a basic skeleton provided by the teacher with an openGL implementation.
@@ -108,7 +135,7 @@ export default {
           webLink: 'https://github.com/Adria-F/QT-Graphics-Engine'
         },
         {
-          imagePath: require('@/assets/SCLogo.png'),
+          imagePath: require('@/assets/projects/SCLogo.png'),
           title: 'Swamp Chaos',
           description: 
           `Swamp Chaos is a narrative game which features multiple decisions and endings. It was developed using RPGMaker MV, as a delivery for the "Level Design" subject. The project was based on a one page dungeon with the same name, by Dennis Filipiak.
