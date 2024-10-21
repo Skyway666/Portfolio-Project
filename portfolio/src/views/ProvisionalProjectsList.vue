@@ -36,7 +36,7 @@ export default {
           `<a href="https://play.google.com/store/apps/details?id=com.habby.archero&hl=es_419">Archero</a> like game themed with a cute necromancer mage. The player would charge mana by hitting the enemies with orbs while moving and then spend it unleashing devastating spell combinations when standing still. Additionally, some enemies could be revived as zombies to aid the player in his malevolent journy
           
           The game's development was a partnership with <a href="https://www.homagames.com/">HOMA</a>. It lasted for one month after which it released with a marketing campaign with the objective of analysing its metrics and check the projects viability and possible iteration points.`,
-          webLink: 'https://play.google.com/store/apps/details?id=com.Sngular.Revolver&pli=1'
+          webLink: 'https://play.google.com/store/apps/details?id=com.sngular.archano'
         },
         {
           imagePath: require('@/assets/projects/RRLogo.png'),
