@@ -4,7 +4,7 @@
         <div class="left-page-column">
             <div class="profile-container">
                 <p class="name">LUCAS GARCÍA MATEU</p>
-                <p class="position">Game Developer</p>
+                <p class="position">C++ programmer</p>
                 <img :src="require('@/assets/CV/LucasGarciaMateu.png')" 
                 width="270px"
                 height="270px"/>
@@ -47,8 +47,7 @@
                 <div class="section-container">
                 <div class="section-title">Profile</div>
                 <div>I'm a versatile programmer with a solid C++ base and professional experience using mainly Unity, but also Unreal and other
-                    less popular game engines such as Godot and Construct.<br><br>
-                    I'm interested in working either as an engine tools or gameplay programming developer.
+                    less popular game engines such as Godot and Construct.
                 </div>
             </div>
             <div class="section-container">
@@ -146,6 +145,16 @@ export default {
             ],
             projects: [
                 {
+                    title: "Lidar for Real Madrid",
+                    titleHref: "https://ouster.com/",
+                    description: "Integration of LIDAR sensors, model OSDome, in Unreal to detect human presence"
+                },
+                {
+                    title: "Discovery table",
+                    titleHref: "http://sngular.com/insights/230/a-unique-and-interactive-experience-for-the-saudi-arabian-pavilion-at-expo-2020-dubai",
+                    description: "Multiuser interactive experience rendered by 12 PCs in real time (Unreal Engine C++)"
+                },
+                {
                     title: "Dungeon Brawler",
                     titleHref: "https://angryfrogdev.github.io/Dungeon-Brawler/",
                     description: "Street Fighter style fighting game running in C++"
@@ -158,38 +167,28 @@ export default {
                 {
                     title: "Mirror",
                     titleHref: "https://github.com/Skyway666/TFG-investigation",
-                    description: "Reflection tool/library for C++ (Final Degree Project)"
+                    description: "Reflection tool/library for C++ (Capstone Project)"
                 },
                 {
-                    title: "Asun",
-                    titleHref: "https://dynamiccast.itch.io/asun",
-                    description: "Survival beat em up Game Jam game, based on the theme 'Sorpresa', built in Unity"
+                    title: "Kuroko Engine",
+                    titleHref: "https://skyway666.github.io/Kuroko-Engine/",
+                    description: "C++ Game Engine with Wren based scripting system"
                 },
                 {
-                    title: "Bubble Ball",
-                    titleHref: "https://www.youtube.com/watch?v=y2ManVDD-fM",
-                    description: "Four player party game Game Jam game, based on the theme 'Water', built in Unity"
+                    title: "Advanced Graphics Engine",
+                    titleHref: "https://github.com/Adria-F/QT-Graphics-Engine",
+                    description: "C++ Graphics Engine with the implementation of advanced techniques"
                 },
                 {
-                    title: "Magic Gone Wrong",
-                    titleHref: "https://skyway666.itch.io/magic-gone-wrong",
-                    description: "'Vampire Survivor' style top down shooter, based on the theme 'Magic'"
+                    title: "Raiden",
+                    titleHref: "https://furryghoul.github.io/Pandoras_Box_Raiden/",
+                    description: "Clone of the classic arcade game \"Raiden\" built in C++"
                 },
                 {
-                    title: "Om Nom Pirates Clans",
-                    titleHref: "https://www.youtube.com/watch?v=DX_WiFLyFMI",
-                    description: "Strategy mobile game with the OmNom IP in collaboration with Zeptolab"
-                },
-                {
-                    title: "SOA",
-                    titleHref: "https://www.youtube.com/watch?v=raQ3iHhE_Kk",
-                    description: "Scriptable Objects Architecture package built for Unity"
-                },
-                {
-                    title: "Qatar Olympic and sports museum",
-                    titleHref: "https://321qosm.org.qa/en/",
-                    description: "Digital product for a sports themed museum in Qatar"
-                },
+                    title: "Chat",
+                    titleHref: "https://github.com/Skyway666/Networks/tree/master/Networks%20-%20Client-Server-Starter",
+                    description: "Chat application using network sockets in C++"
+                }
             ]
         }
     }
