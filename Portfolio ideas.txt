@@ -1,6 +1,9 @@
 // New iteration
 - Home: Breve descripción de mi persona y contacto
 - Proyectos: Tabla de proyectos con posibilidad de filtrado
+	- https://martin.merugames.com/projects
+	- https://www.charutak.xyz/work
+	- https://zingamasound.com/work/
 - Career: Hitos relevantes de mi trayectoria profesional (estudio y trabajo)
 	- https://davidjmoldes.wixsite.com/davidgamedesign/cv
 	- https://www.dmuhurdar.com/resume/
@@ -22,3 +25,6 @@
 - Descripción (tostón para quién lo quiera)
 - Imagenes + Video
 - Fecha inicial, tiempo de desarrollo, tamaño del equipo, contribuciones y enlaces externos
+
+// Referencias
+- https://github.com/emmabostian/developer-portfolios?tab=readme-ov-file
