@@ -4,8 +4,7 @@ import Home from '../views/Home.vue'
 import Career from '../views/Career.vue'
 import About from '../views/About.vue'
 import CV from '../views/CV.vue'
-
-import ProvisionalProjectsList from '../views/ProvisionalProjectsList.vue'
+import Projects from '../views/Projects.vue'
 
 
 Vue.use(VueRouter)
@@ -14,28 +13,32 @@ const routes = [
   {
     path:'/',
     name: 'home',
-    component: Home
-
+    component: Home,
+    meta: {mainViewClass: "main-view-narrow"}
   },
   {
     path:'/projects',
     name: 'projects',
-    component: ProvisionalProjectsList
+    component: Projects,
+    meta: {mainViewClass: "main-view-wide"}
   },
   {
     path:'/career',
     name: 'career',
-    component: Career
+    component: Career,
+    meta: {mainViewClass: "main-view-narrow"}
   },
   {
     path:'/about',
     name: 'about',
-    component: About
+    component: About,
+    meta: {mainViewClass: "main-view-narrow"}
   },
   {
     path:'/CV',
     name: 'CV',
-    component: CV
+    component: CV,
+    meta: {mainViewClass: ""}
   }
 ]
 
