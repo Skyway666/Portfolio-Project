@@ -12,8 +12,8 @@
             <div class="project" v-for="(project, index) in projects" :key="index">
               <img :src="project.imagePath" class="project-image" @load="resizeImageToContainer($event)"/>
               <div class="project-overlay">
-                  <h2>{{project.title}}</h2>
-                  <p>{{project.description}}</p>
+                  <div class="project-title">{{project.title}}</div>
+                  <div class="project-description">{{project.description}}</div>
               </div>
             </div>
         </div>
@@ -164,17 +164,22 @@ export default {
     justify-content: center;
     width: 30%;
     aspect-ratio: 16/9;
-    }
-
+  }
+  .project-title{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: normal;
+  }
+  .project-description{
+    font-size: 18px;
+  }
   .project-image{
     z-index: -1;
     position: absolute;
     transition: 0.3s ease-in-out;
-     /*TODO: Adapt all images to similar resolutions */
     border-radius: 15px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
   }
-
   .project-overlay {
     width: 100%;
     height: 100%;
@@ -183,17 +188,16 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     border-radius: 15px;
-   }
-   /* Show overlay on hover */
-   .project:hover .project-overlay {
-        opacity: 1;
-    }
+    padding: 0px 20px;
+  }
+  .project:hover .project-overlay {
+    opacity: 1;
+  }
 
-  /*Portrait*/
   @media (max-width: 480px){
     .project{
         width: 100%;
