@@ -10,11 +10,11 @@
         <!-- Grid -->
         <div class="projects-grid">
             <div class="project" v-for="(project, index) in projects" :key="index">
-                <img :src="project.imagePath" class="project-image"/>
-                 <div class="project-overlay">
-                    <h2>{{project.title}}</h2>
-                    <p>{{project.description}}</p>
-                </div>
+              <img :src="project.imagePath" class="project-image" @load="resizeImageToContainer($event)"/>
+              <div class="project-overlay">
+                  <h2>{{project.title}}</h2>
+                  <p>{{project.description}}</p>
+              </div>
             </div>
         </div>
     </div>
@@ -113,6 +113,30 @@ export default {
       ]
     }
   },
+  methods: {
+    resizeImageToContainer(event) {
+      // Get reference to the image element and its container
+      const img = event.target;  
+      const container = img.parentElement;
+      
+      // Compute their aspect ratios
+      const imgRatio = img.naturalWidth / img.naturalHeight;
+      const containerRatio = container.offsetWidth / container.offsetHeight;
+
+      // More horizontal than container, set width and adapt height
+      if (imgRatio > containerRatio) 
+      {
+        img.style.width = '100%';
+        img.style.maxHeight = '100%';
+      }
+      // More vertical than container, set height and adapt width
+      else 
+      {
+        img.style.height = '100%';
+        img.style.maxWidth = '100%';
+      }
+    }
+  },
 }
 </script>
 
@@ -130,24 +154,25 @@ export default {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-evenly;
+    row-gap: 5vh;
   }
   .project{
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    width: 25%;
+    width: 30%;
     aspect-ratio: 16/9;
-    margin: 2.5%;
-  }
+    }
 
   .project-image{
     z-index: -1;
     position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
     transition: 0.3s ease-in-out;
+     /*TODO: Adapt all images to similar resolutions */
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
   }
 
   .project-overlay {
@@ -161,6 +186,7 @@ export default {
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    border-radius: 15px;
    }
    /* Show overlay on hover */
    .project:hover .project-overlay {
