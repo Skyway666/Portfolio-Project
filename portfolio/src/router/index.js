@@ -5,6 +5,7 @@ import Career from '../views/Career.vue'
 import About from '../views/About.vue'
 import CV from '../views/CV.vue'
 import Projects from '../views/Projects.vue'
+import Project from '../views/Project.vue'
 
 
 Vue.use(VueRouter)
@@ -39,6 +40,12 @@ const routes = [
     name: 'CV',
     component: CV,
     meta: {mainViewClass: ""}
+  },
+  {
+    path:'/project/:id',
+    name: 'project',
+    component: Project,
+    meta: {mainViewClass: "main-view-narrow"}
   }
 ]
 
