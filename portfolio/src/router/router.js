@@ -44,7 +44,7 @@ const routes = [
     path:'/project/:id',
     name: 'project',
     component: Project,
-    meta: {mainViewClass: "main-view-narrow"}
+    meta: {mainViewClass: "main-view-wide"}
   }
 ]
 
