@@ -1,20 +1,27 @@
 <template>
   <div>
+    <!-- Career section-->
     <div v-for="(careerSection, index) in careerSections" :key="index">
       <div class="career-section">
+        <!-- Title-->
         <div class="career-section-title">
           {{careerSection.title}}
         </div>
+        <!-- Milestones-->
         <div class="career-section-milestones" >
           <div class="milestone" v-for="(milestone, index) in careerSection.milestones" :key="index">
+            <!-- Time (landscape)-->
             <div v-if="$isLandscape()" class="milestone-date">
               {{milestone.time}}
             </div>
             <div class="milestone-data">
+              <!-- Title-->
               <div class="milestone-data-title" v-html="milestone.title"/>
+              <!-- Time (portrait)-->
               <div v-if="!$isLandscape()" class="milestone-date">
                 {{milestone.time}}
               </div>
+              <!-- Description-->
               <div>
                 {{milestone.description}}
               </div>

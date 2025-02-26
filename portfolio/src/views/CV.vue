@@ -2,6 +2,7 @@
     <div class="page-background">
         <!-- Left-->
         <div class="left-page-column">
+            <!-- Profile -->
             <div class="profile-container">
                 <p class="name">LUCAS GARCÍA MATEU</p>
                 <p class="position">Game Developer</p>
@@ -9,7 +10,7 @@
                 width="270px"
                 height="270px"/>
             </div>
-
+            <!-- Contact -->
             <div class="section-container" style="font-size: 17px;">
                 <div class="section-title">Contact</div>
                 <sui-list>
@@ -21,6 +22,7 @@
                     </sui-list-item>
                 </sui-list>
             </div>
+            <!-- Education -->
             <div class="section-container">
                 <div class="section-title" style="margin-bottom:30px">Education</div>
                 <Timeline dotSize="10px" :events="education">
@@ -42,49 +44,54 @@
 
         <!--Right-->
         <div class="right-page-column">
-            <!--Up Left-->
+            <!--Up Left, Professional section-->
             <div class="text-column">
+                <!-- Profile description -->
                 <div class="section-container">
-                <div class="section-title">Profile</div>
-                <div>I'm a versatile programmer with a solid C++ base and professional experience using mainly Unity, but also Unreal and other
+                    <div class="section-title">Profile</div>
+                    <div>I'm a versatile programmer with a solid C++ base and professional experience using mainly Unity, but also Unreal and other
                     less popular game engines such as Godot and Construct.<br><br>
                     I'm interested in working either as an engine tools or gameplay programming developer.
+                    </div>
                 </div>
-            </div>
-            <div class="section-container">
-                <div class="section-title">Professional</div>
-                <div>4 years as a developer in <a href="https://www.sngular.com/es/">Sngular</a> where I went from Junior to Senior developer.
-                    <br><br>
-                    I've worked in Videgame, Museum and internal tools projects, taking part in technical leading roles and participating on crucial
-                    installation and business trips to the middle east.
-                </div>
-            </div>
-            <!--Up Right-->
-            </div>
-            <div class="text-column">
+                <!-- Experience -->
                 <div class="section-container">
-                <div class="section-title">Hobbies</div>
-                <div>
-                    <sui-list bulleted>
-                        <sui-list-item>Martial Arts</sui-list-item>
-                        <sui-list-item>Videogames</sui-list-item>
-                        <sui-list-item>Content Creation</sui-list-item>
-                    </sui-list>
+                    <div class="section-title">Professional</div>
+                    <div>4 years as a developer in <a href="https://www.sngular.com/es/">Sngular</a> where I went from Junior to Senior developer.
+                        <br><br>
+                        I've worked in Videgame, Museum and internal tools projects, taking part in technical leading roles and participating on crucial
+                        installation and business trips to the middle east.
+                    </div>
                 </div>
             </div>
-            <div class="section-container">
-                <div class="section-title">Personal</div>
-                <div> 
-                    As an extroverted and honest individual, I prioritize straightforward communication, delivering only the necessary context for efficiency. 
-                    I believe in treating others with respect and a friendly warmth to foster a relaxed yet productive work environment. 
-                    My persistent, disciplined, and methodical approach to both work and life makes me a trustworthy and reliable employee.
+            <!--Up Right, Personal section-->
+            <div class="text-column">
+                <!-- Hobbies -->
+                <div class="section-container">
+                    <div class="section-title">Hobbies</div>
+                    <div>
+                        <sui-list bulleted>
+                            <sui-list-item>Martial Arts</sui-list-item>
+                            <sui-list-item>Videogames</sui-list-item>
+                            <sui-list-item>Content Creation</sui-list-item>
+                        </sui-list>
+                    </div>
                 </div>
-            </div>
+                <!-- Personal -->
+                <div class="section-container">
+                    <div class="section-title">Personal</div>
+                    <div> 
+                        As an extroverted and honest individual, I prioritize straightforward communication, delivering only the necessary context for efficiency. 
+                        I believe in treating others with respect and a friendly warmth to foster a relaxed yet productive work environment. 
+                        My persistent, disciplined, and methodical approach to both work and life makes me a trustworthy and reliable employee.
+                    </div>
+                </div>
             </div>
             <hr class="solid"/>
-            <!--Down Center-->
+            <!--Down Center, Projects-->
             <div class="section-container">
                 <div class="section-title">Projects</div>
+                <!-- Projects grid -->
                 <div class="projects-grid"> 
                     <div class="project" v-for="(project, index) in projects" :key="index">
                         <a class="project-title" :href="project.titleHref">{{ project.title }}</a>
@@ -301,11 +308,6 @@ export default {
         font-size: 17px;
         text-decoration: underline;
     }
-
-    @media print{
-
-    }
-
 
     @page{
         size: A4 landscape;

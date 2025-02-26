@@ -1,6 +1,8 @@
 <template>
     <div class="background">
+        <!-- Title -->
         <h1 class="title">I am Lucas</h1>
+        <!-- Description -->
         <div>
             <p>
                 Welcome to my Developer Portfolio!
@@ -11,6 +13,7 @@
             <p>
                 Feel free to contact me if my projects spark your interest, I'm a chatty and easy going guy who always likes talking about development!
             </p>
+            <!-- Buttons -->
             <div class="buttons">
                 <sui-button color=black size=big @click="onDownloadCV">Download CV</sui-button>
                 <sui-button color=grey size=big @click="onContactMe">Contact me</sui-button>

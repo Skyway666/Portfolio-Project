@@ -2,16 +2,16 @@
     <div class="background">
         <!-- Filters -->
         <div>
-            <sui-button>Filter 1</sui-button>
-            <sui-button>Filter 2</sui-button>
-            <sui-button>Filter 3</sui-button>
-            <sui-button>Filter 4</sui-button>
+            <sui-button v-for="i in 5" :key="i">Filter {{i}}</sui-button>
         </div>
         <!-- Grid -->
         <div class="projects-grid">
+            <!-- Project -->
             <router-link class="project" v-for="(project, index) in $store.state.projects" :key="index" 
               :to="'/project/' + index">
+              <!-- Image -->
               <img :src="project.imagePath" class="project-image" @load="resizeImageToContainer($event)"/>
+              <!-- Overlay -->
               <div class="project-overlay" >
                   <div class="project-title">{{project.title}}</div>
                   <div class="project-description">{{project.description}}</div>
