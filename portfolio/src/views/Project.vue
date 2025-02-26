@@ -1,12 +1,16 @@
 <template>
     <div>
-        <h1>{{ $store.state.projects[$route.params.id].title }}</h1>
-        <h3>{{ $store.state.projects[$route.params.id].description }}</h3>
+        <h1>{{ project.title }}</h1>
+        <h3>{{ project.description }}</h3>
     </div>
 </template>
 <script>
 export default {
-    
+    computed: {
+        project(){
+            return this.$store.state.projects[this.$route.params.id];
+        }
+    }
 }
 </script>
 <style scoped>
