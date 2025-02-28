@@ -10,11 +10,11 @@
             <router-link class="project" v-for="(project, index) in $store.state.projects" :key="index" 
               :to="'/project/' + index">
               <!-- Image -->
-              <img :src="project.imagePath" class="project-image" @load="resizeImageToContainer($event)"/>
+              <img :src="project.thumbnail" class="project-image" @load="resizeImageToContainer($event)"/>
               <!-- Overlay -->
               <div class="project-overlay" >
                   <div class="project-title">{{project.title}}</div>
-                  <div class="project-description">{{project.description}}</div>
+                  <div class="project-description">{{project.shortDescription}}</div>
               </div>
             </router-link>
         </div>
