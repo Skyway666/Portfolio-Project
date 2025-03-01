@@ -116,6 +116,7 @@ export default {
         font-size: 60px;
         line-height: 50px;
         height: fit-content;
+        width: fit-content;
     }
     .header-specifications{
         display: flex;
@@ -145,6 +146,8 @@ export default {
         display: flex;
         flex-direction: row;
         align-items: center;
+        flex-wrap: wrap;
+        row-gap: 5px;
     }
     .text-section-tags-label{
         font-weight: bold;
@@ -165,6 +168,10 @@ export default {
     @media (max-width: 480px){
         .header{
             justify-content: center;
+        }
+        .header-left{
+            justify-content: center;
+            align-items: center;
         }
         .graphics-section{
             align-items: center;
