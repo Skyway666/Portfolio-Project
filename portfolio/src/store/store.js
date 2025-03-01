@@ -37,7 +37,12 @@ export default new Vuex.Store({
                     "HOMA"
                 ],
                 contributions: [
-
+                    "Homa SDK integration and platforms management (Homa Lab, Game Analytics and Facebook Adds)",
+                    "Programming team leadership",
+                    "Virtual Joystick system",
+                    "Entity system (player and enemies)",
+                    "Projectile system",
+                    "Stage Boosters"
                 ]
             },
             {
@@ -71,7 +76,12 @@ export default new Vuex.Store({
                     "HOMA"
                 ],
                 contributions: [
-
+                    "Homa SDK integration and platforms management (Homa Lab, Game Analytics and Facebook Adds)",
+                    "Programming team leadership",
+                    "Virtual Joystick system",
+                    "Entity system (player and enemies)",
+                    "Projectile system",
+                    "Stage Boosters"
                 ]
             },
             {
@@ -105,7 +115,13 @@ export default new Vuex.Store({
                     "Zeptolab"
                 ],
                 contributions: [
-
+                    "Scriptable Objects based architecture",
+                    "Audio system",
+                    "Gameplay UI",
+                    "Tutorial",
+                    "Firebase Integration",
+                    "Team management",
+                    "Gameplay system:\n- AI\n- Movement\n- Combat effects\n- State modifiers\n- Player spells\n- Captains"
                 ]
             },
             {
@@ -138,7 +154,12 @@ export default new Vuex.Store({
                     "Programming"
                 ],
                 contributions: [
-
+                    "Character controller",
+                    "Collider system",
+                    "Projectile system",
+                    "Warrior, along with Cristian Palos (st_s2, cr_s2) and Genís Bayó(cr_s1)",
+                    "Mage",
+                    "Paladin"
                 ]
             },
             {
@@ -173,7 +194,20 @@ export default new Vuex.Store({
                     "Programming"
                 ],
                 contributions: [
-
+                    "Information about hardware and application",
+                    "Application log and performance indicators as UI items",
+                    "Rendering and window options",
+                    "About tab with information about the engine and links to the used libraries",
+                    "Primitive shapes (Sphere and Cylinder)",
+                    "File import through drag and drop",
+                    "Load and Save of the editor configuration through JSON (open tabs and window options)",
+                    "UI docking",
+                    "Own File Format for meshes and all textures",
+                    "Quadtree",
+                    "Save and Load of scene",
+                    "Time control implemented, with serialization of scene reload when stopping time",
+                    "Resource manager with online functionalities (add, modify and delete resources)",
+                    "Scripting system core functionality"
                 ]
             },
             {
@@ -200,6 +234,10 @@ export default new Vuex.Store({
                     {
                         text: "Webpage",
                         link: 'https://rustiktie.github.io/project-3-bcn/'
+                    },
+                    {
+                        text: "Contributions",
+                        link: "https://rustiktie.github.io/project-3-bcn/webpage/mem_lucas_garcia.html"
                     }
                 ],
                 tags: [
@@ -208,7 +246,8 @@ export default new Vuex.Store({
                     "Programming"
                 ],
                 contributions: [
-
+                    "Improving scripting system and adapting it to the rest of subsystems (UI, Animations, Physics...)",
+                    "Improvement of the combat system after the first iteration"
                 ]
             },
             {
@@ -219,7 +258,7 @@ export default new Vuex.Store({
 
                 // Detail view
                 specifications: {
-                    year: "2019",
+                    year: "2018",
                     duration: "3 months",
                     teamSize: "2"
                 },
@@ -241,7 +280,12 @@ export default new Vuex.Store({
                     "Programming"
                 ],
                 contributions: [
-
+                    "Camera controller",
+                    "Movement of the agents along the points provided by Pathfinding",
+                    "Soldier behaviour",
+                    "Famer behaviour",
+                    "Zombie behaviour",
+                    "UI"
                 ]
             },
             {
@@ -276,7 +320,8 @@ export default new Vuex.Store({
                     "Programming"
                 ],
                 contributions: [
-
+                    "Player controller",
+                    "Ball bouncing behaviour"
                 ]
             },
             {
@@ -301,6 +346,10 @@ export default new Vuex.Store({
                     {
                         text: "Webpage",
                         link: 'https://rogerjimbo.itch.io/bubbleball'
+                    },
+                    {
+                        text: "Repository",
+                        link: "https://github.com/Hugo-Bo-Diaz/GranCITMGameJam2"
                     }
                 ],
                 tags: [
@@ -309,7 +358,9 @@ export default new Vuex.Store({
                     "Programming"
                 ],
                 contributions: [
-
+                    "Player controller",
+                    "Scoring system",
+                    "Input managing for 4 players (nightmare for that Unity version)"
                 ]
             },
             {
@@ -376,7 +427,10 @@ export default new Vuex.Store({
                     "Programming"
                 ],
                 contributions: [
-
+                    "Deferred renderer",
+                    "Grid",
+                    "Depth Of Field",
+                    "Orbital Camera"
                 ]
             },
             {
