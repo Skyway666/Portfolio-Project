@@ -23,6 +23,12 @@ const routes = [
     meta: {mainViewClass: "main-view-wide"}
   },
   {
+    path:'/project/:id',
+    name: 'project',
+    component: Project,
+    meta: {mainViewClass: "main-view-wide"}
+  },
+  {
     path:'/career',
     name: 'career',
     component: Career,
@@ -39,12 +45,6 @@ const routes = [
     name: 'CV',
     component: CV,
     meta: {mainViewClass: ""}
-  },
-  {
-    path:'/project/:id',
-    name: 'project',
-    component: Project,
-    meta: {mainViewClass: "main-view-wide"}
   }
 ]
 

@@ -43,10 +43,18 @@
                 </div>
             <!-- Tags -->
             <div class="text-section-tags">
+                <div class="text-section-tags-label">Tags:</div>
                 <sui-label v-for="(tag, index) in project.tags" :key="index">
                     {{tag}}
                 </sui-label>
             </div>
+            <!-- Contributions -->
+            <div class="text-section-title" v-if="project.contributions.length != 0"> Contributions </div>
+            <ul class="text-section-contributions">
+                <li v-for="(contribution, index) in project.contributions" :key="index">
+                    {{ contribution }}
+                </li>
+            </ul>
             <!-- Portrait graphics -->
             <div class="graphics-section" v-if="!$isLandscape()">
                 <img class="graphic" v-for="(layoutMediaItem, index) in project.layoutMedia" :src="layoutMediaItem" :key="index"/>
@@ -136,6 +144,22 @@ export default {
     .text-section-tags{
         display: flex;
         flex-direction: row;
+        align-items: center;
+    }
+    .text-section-tags-label{
+        font-weight: bold;
+        font-size: 15px;
+        margin-right: 10px;
+    }
+    .text-section-title{
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    .text-section-contributions{
+        list-style-type: disc;
+        padding-left: 20px;
+        text-align: left;
     }
 
     @media (max-width: 480px){

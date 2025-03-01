@@ -1,9 +1,9 @@
 <template>
     <div class="background">
-        <!-- Filters -->
+        <!-- Filters 
         <div>
             <sui-button v-for="i in 5" :key="i">Filter {{i}}</sui-button>
-        </div>
+        </div>-->
         <!-- Grid -->
         <div class="projects-grid">
             <!-- Project -->
