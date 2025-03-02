@@ -231,7 +231,7 @@ export default {
     @media (max-width: 480px){
         .header{
             justify-content: center;
-            margin-top: 30px;
+            margin-top: 35px;
         }
         .header-left{
             justify-content: center;
@@ -248,7 +248,7 @@ export default {
             display: flex;
             justify-content: center;
         }
-        .footer{
+        .navigation{
             top: 100px;
             bottom:unset;
         }
