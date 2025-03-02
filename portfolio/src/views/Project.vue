@@ -78,11 +78,12 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <sui-button class="footer-next" v-if="$route.params.id != 0" 
+        <!-- Navigation -->
+        <div class="navigation">
+            <sui-button class="navigation-next" v-if="$route.params.id != 0" 
                 color="grey" size="large" icon="left arrow" 
                 @click="$router.push('/project/' + (Number($route.params.id) - 1))"/>
-            <sui-button class="footer-previous" v-if="$route.params.id != $store.state.projects.length - 1" 
+            <sui-button class="navigation-previous" v-if="$route.params.id != $store.state.projects.length - 1" 
                 color="grey" size="large" icon="right arrow" 
                 @click="$router.push('/project/' + (Number($route.params.id) + 1))"/>
         </div>
@@ -205,8 +206,8 @@ export default {
         text-align: left;
     }
 
-    /* Footer */
-    .footer{
+    /* Navigation */
+    .navigation{
         position: fixed;
         bottom:5vh;
         left: 2.5%;
@@ -214,13 +215,13 @@ export default {
         height: 45px;
         z-index: 1;
     }
-    .footer-previous{
+    .navigation-previous{
         position: absolute;
         right: 0;
         bottom: 0;
         top: 0;
     }
-    .footer-next{
+    .navigation-next{
         position: absolute;
         left: 0;
         bottom: 0;
