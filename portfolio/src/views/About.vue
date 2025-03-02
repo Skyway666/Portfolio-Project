@@ -85,7 +85,7 @@ export default {
   }
   .main-title{
     font-size: 50px;
-    padding-top: 20px;
+    height: fit-content;
     padding-bottom: 10px;
   }
   .main-subtitle{

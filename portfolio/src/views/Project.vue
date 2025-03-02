@@ -1,65 +1,92 @@
 <template>
     <div class="background">
-        <!-- Landscape graphics -->
-        <div class="graphics-section" v-if="$isLandscape()">
-            <img class="graphic" v-for="(layoutMediaItem, index) in project.layoutMedia" :src="layoutMediaItem" :key="index"/>
+        <div class="body">
+            <!-- Landscape graphics -->
+            <div class="graphics-section" v-if="$isLandscape()">
+                <div class="graphic-wrapper" v-for="(layoutMediaItem, index) in project.layoutMedia" :key="index">
+                    <img class="graphic" v-if="layoutMediaItem.type == 'IMAGE' " :src="layoutMediaItem.src"/>
+                    <iframe class="graphic video" v-if="layoutMediaItem.type == 'VIDEO'"  :src="layoutMediaItem.src" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen/>
+                </div>
+            </div>
+            <!-- Text section -->
+            <div class="text-section">
+                <!-- Header -->
+                <div class="header">
+                    <div class="header-left">
+                        <!-- Title -->
+                        <div class="header-title">
+                            {{ project.title }}
+                        </div>
+                        <!-- Specifications -->
+                        <div class="header-specifications">
+                            <!-- Year -->
+                            <div class="header-specification">
+                                <sui-icon name="calendar"/>
+                                <div>{{ project.specifications.year }}</div>
+                            </div>
+                            <!-- Duration -->
+                            <div class="header-specification">
+                                <sui-icon name="stopwatch"/>
+                                <div>{{ project.specifications.duration }}</div>
+                            </div>
+                            <!-- Team Size -->
+                            <div class="header-specification">
+                                <sui-icon name="users"/>
+                                <div>{{ project.specifications.teamSize }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Long description -->
+                <div v-html="project.longDescription"/>
+                <!-- Links -->
+                    <div class="text-section-links">
+                    <sui-button v-for="(linkButton, index) in project.linkButtons" @click="openLink(linkButton.link)" :key="index">
+                        {{ linkButton.text }}
+                    </sui-button>
+                    </div>
+                <!-- Tags -->
+                <div class="text-section-tags">
+                    <div class="text-section-tags-label">Tags:</div>
+                    <sui-label v-for="(tag, index) in project.tags" :key="index">
+                        {{tag}}
+                    </sui-label>
+                </div>
+                <!-- Contributions -->
+                <div class="text-section-title" v-if="project.contributions.length != 0"> Contributions </div>
+                <ul class="text-section-contributions">
+                    <li v-for="(contribution, index) in project.contributions" :key="index">
+                        {{ contribution }}
+                    </li>
+                </ul>
+                <!-- Portrait graphics -->
+                <div class="graphics-section" v-if="!$isLandscape()">
+                    <div class="graphic-wrapper" v-for="(layoutMediaItem, index) in project.layoutMedia" :key="index">
+                        <img class="graphic" v-if="layoutMediaItem.type == 'IMAGE' " :src="layoutMediaItem.src"/>
+                        <iframe class="graphic video" v-if="layoutMediaItem.type == 'VIDEO'"  :src="layoutMediaItem.src" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen/>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Text section -->
-         <div class="text-section">
-            <!-- Header -->
-            <div class="header">
-                <div class="header-left">
-                    <!-- Title -->
-                    <div class="header-title">
-                        {{ project.title }}
-                    </div>
-                    <!-- Specifications -->
-                    <div class="header-specifications">
-                        <!-- Year -->
-                        <div class="header-specification">
-                            <sui-icon name="calendar"/>
-                            <div>{{ project.specifications.year }}</div>
-                        </div>
-                        <!-- Duration -->
-                        <div class="header-specification">
-                            <sui-icon name="stopwatch"/>
-                            <div>{{ project.specifications.duration }}</div>
-                        </div>
-                        <!-- Team Size -->
-                        <div class="header-specification">
-                            <sui-icon name="users"/>
-                            <div>{{ project.specifications.teamSize }}</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Long description -->
-            <div v-html="project.longDescription"/>
-            <!-- Links -->
-                <div class="text-section-links">
-                <sui-button v-for="(linkButton, index) in project.linkButtons" @click="openLink(linkButton.link)" :key="index">
-                    {{ linkButton.text }}
-                </sui-button>
-                </div>
-            <!-- Tags -->
-            <div class="text-section-tags">
-                <div class="text-section-tags-label">Tags:</div>
-                <sui-label v-for="(tag, index) in project.tags" :key="index">
-                    {{tag}}
-                </sui-label>
-            </div>
-            <!-- Contributions -->
-            <div class="text-section-title" v-if="project.contributions.length != 0"> Contributions </div>
-            <ul class="text-section-contributions">
-                <li v-for="(contribution, index) in project.contributions" :key="index">
-                    {{ contribution }}
-                </li>
-            </ul>
-            <!-- Portrait graphics -->
-            <div class="graphics-section" v-if="!$isLandscape()">
-                <img class="graphic" v-for="(layoutMediaItem, index) in project.layoutMedia" :src="layoutMediaItem" :key="index"/>
-            </div>
-         </div>
+        <div class="footer">
+            <sui-button class="footer-next" v-if="$route.params.id != 0" 
+                color="grey" size="large" icon="left arrow" 
+                @click="$router.push('/project/' + (Number($route.params.id) - 1))"/>
+            <sui-button class="footer-previous" v-if="$route.params.id != $store.state.projects.length - 1" 
+                color="grey" size="large" icon="right arrow" 
+                @click="$router.push('/project/' + (Number($route.params.id) + 1))"/>
+        </div>
+        
     </div>
 </template>
 <script>
@@ -80,20 +107,30 @@ export default {
     /*Background*/
     .background{
         display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-grow: 1;
+        justify-content: space-between;
+    }
+
+    /*Body*/
+    .body{
+        display: flex;
         flex-direction: row;
         justify-content: center;
-        width: 100%;
-        height: 100%;
     }
 
     /*Graphics*/
     .graphics-section{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         width: 45%;
         gap: 20px;
         flex-shrink: 0;
+    }
+    .graphic-wrapper{
+        display: flex;
+        justify-content: flex-start;
     }
     .graphic{
         width: 90%;
@@ -101,6 +138,9 @@ export default {
         box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
     }
 
+    .video{
+        aspect-ratio: 16/9;
+    }
 
     /*Header*/
     .header{
@@ -165,17 +205,51 @@ export default {
         text-align: left;
     }
 
+    /* Footer */
+    .footer{
+        position: fixed;
+        bottom:5vh;
+        left: 2.5%;
+        width: 95%;
+        height: 45px;
+        z-index: 1;
+    }
+    .footer-previous{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+    }
+    .footer-next{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: 0;
+    }
+
     @media (max-width: 480px){
         .header{
             justify-content: center;
+            margin-top: 30px;
         }
         .header-left{
             justify-content: center;
             align-items: center;
         }
+        .header-title{
+            text-align: center;
+        }
         .graphics-section{
-            align-items: center;
             width: 100%;
+            margin-bottom: 20px;
+        }
+        .graphic-wrapper{
+            display: flex;
+            justify-content: center;
+        }
+        .footer{
+            top: 100px;
+            bottom:unset;
         }
     }
 </style>

@@ -22,7 +22,10 @@ export default new Vuex.Store({
           
                 The game's development was a partnership with <a href="https://www.homagames.com/">HOMA</a>. It lasted for one month after which it released with a marketing campaign with the objective of analysing its metrics and check the projects viability and possible iteration points.`,
                 layoutMedia:[
-                    require('@/assets/projects/ArchanoLogo.png')
+                    {
+                        type: 'IMAGE',
+                        src: require('@/assets/projects/ArchanoLogo.png')
+                    }
                 ],
                 linkButtons: [
                     {
@@ -61,7 +64,10 @@ export default new Vuex.Store({
           
                 The game's development was a partnership with <a href="https://www.homagames.com/">HOMA</a>. It lasted for one month after which it released with a marketing campaign with the objective of analysing its metrics and check the projects viability and possible iteration points.`,
                 layoutMedia:[
-                    require('@/assets/projects/RRLogo.png')
+                    {
+                        type: 'IMAGE',
+                        src: require('@/assets/projects/RRLogo.png')
+                    }
                 ],
                 linkButtons: [
                     {
@@ -100,13 +106,13 @@ export default new Vuex.Store({
           
                 The development lasted for 6 months, during which focus test where performed to ensure the success of the release. Unfortunatelly it was cancelled due to the metrics no reaching the expected results.`,
                 layoutMedia:[
-                    require('@/assets/projects/ONSBLogo.png')
+                    {
+                        type: 'VIDEO',
+                        src: 'https://www.youtube.com/embed/DX_WiFLyFMI?si=qKwjRgHtGIiwHWHf'
+                    }
                 ],
                 linkButtons: [
-                    {
-                        text: "Video",
-                        link: 'https://www.youtube.com/watch?v=DX_WiFLyFMI'
-                    }
+                    
                 ],
                 tags: [
                     "Unity",
@@ -140,7 +146,10 @@ export default new Vuex.Store({
 
                 We used the graphics of the Capcom classic "Dungeons and Dragons, Shadow over Mystara", but completelly re-designed the game and coded it from scratch. There are 4 playable characters, each one with 13 different moves and and two variations.`,
                 layoutMedia:[
-                    require('@/assets/projects/DungeonBrawlerLogo.png')
+                    {
+                        type: 'VIDEO',
+                        src: 'https://www.youtube.com/embed/oEpfn6593k0?si=9HkYVV1JOjKtj9QS'
+                    }
                 ],
                 linkButtons: [
                     {
@@ -180,7 +189,10 @@ export default new Vuex.Store({
           
                 This project was the base for the Atlas engine, used to develop <a href="https://rustiktie.github.io/project-3-bcn/"> Malita, Soul of a Warrior </a>.`,
                 layoutMedia:[
-                    require('@/assets/projects/KurokoLogo.png')
+                    {
+                        type: 'VIDEO',
+                        src: 'https://www.youtube.com/embed/gAQpB8cvS-Q?si=qIdA96EwmPXtGCb-'
+                    }
                 ],
                 linkButtons: [
                     {
@@ -228,7 +240,14 @@ export default new Vuex.Store({
 
                 During Project 3, the game was developed with the combined efforts of 20 people, divided in Coding, Design and Art departments. Additionally, a marketing campaign was deployed, through social media (<a href="https://twitter.com/malitathegame">Twitter</a>, <a href="https://www.instagram.com/malitagame/">Instagram</a> and <a href="https://www.youtube.com/channel/UCZKmG8wNjSxjrQ8kdyABiuA">YouTube</a>) and massive email sending. Finally, the game was published in <a href="https://typhoonstudio.itch.io/malita">Itch.io</a>.`,
                 layoutMedia:[
-                    require('@/assets/projects/MalitaLogo.png')
+                    {
+                        type: 'IMAGE',
+                        src: require('@/assets/projects/MalitaLogo.png')
+                    },
+                    {
+                        type: 'VIDEO',
+                        src: 'https://www.youtube.com/embed/KB4pY7UspHc?si=xV1Tx8pYg4MkgAxd&amp;start=32'
+                    }
                 ],
                 linkButtons: [
                     {
@@ -266,7 +285,10 @@ export default new Vuex.Store({
 
                 The object of the game is surviving 5 days on a militar base during a Zombie apocalypse, through efficient managing. There were 4 AI archtypes: Farmer, Militar, Zombie and Pig, and the player can take actions such as buying more Farmers, Militars or Pigs, upgrading the Militars, command them to collect the money droped by the zombies, etc. It features a day/night cycle, where the different AI archetypes would behave differently.`,
                 layoutMedia:[
-                    require('@/assets/projects/ATLogo.png')
+                    {
+                        type: 'VIDEO',
+                        src: 'https://www.youtube.com/embed/Mj7EGD4yYbs?si=gVsXt9MII_TAhkPi'
+                    }
                 ],
                 linkButtons: [
                     {
@@ -306,7 +328,10 @@ export default new Vuex.Store({
 
                 The game does resemble the game jam's theme due to wordplay, since "Sor Presa" in spanish means "Prisoner Nun".`,
                 layoutMedia:[
-                    require('@/assets/projects/AsunLogo.png')
+                    {
+                        type: 'VIDEO',
+                        src: 'https://www.youtube.com/embed/r6eH7DXdBjc?si=-DdTEsVpQKrKZGR4'
+                    }
                 ],
                 linkButtons: [
                     {
@@ -340,7 +365,10 @@ export default new Vuex.Store({
 
                 The game is a 4 player inverted VolleyBall game, where a bubble is the ball and fishes represent the players.`,
                 layoutMedia:[
-                    require('@/assets/projects/BBLogo.png')
+                    {
+                        type: 'VIDEO',
+                        src: 'https://www.youtube.com/embed/y2ManVDD-fM?si=bClNNCtYzjryoEtd'
+                    }
                 ],
                 linkButtons: [
                     {
@@ -379,7 +407,14 @@ export default new Vuex.Store({
 
                 The system consists of an application built in C++ which reads the user header files to then generate code which once included into the user's project, can be used to access and use the reflection data.`,
                 layoutMedia:[
-                    require('@/assets/projects/MirrorLogo.png')
+                    {
+                        type: 'IMAGE',
+                        src: require('@/assets/projects/MirrorLogo.png')
+                    },
+                    {
+                        type: 'VIDEO',
+                        src: 'https://www.youtube.com/embed/j0U4Q1ckCTA?si=UlPb5Gf6kxGE_mg0'
+                    }
                 ],
                 linkButtons: [
                     {
@@ -413,7 +448,10 @@ export default new Vuex.Store({
  
                 The main aspect of this project is the usage of a deferred renderer to implement techniques such asScreen Space Ambient Occlusion, 3D objects outline, mouse picking using textures and Depth Of Field.`,
                 layoutMedia:[
-                    require('@/assets/projects/AGLogo.png')
+                    {
+                        type: 'IMAGE',
+                        src: require('@/assets/projects/AGLogo.png')
+                    }
                 ],
                 linkButtons: [
                     {
@@ -451,7 +489,10 @@ export default new Vuex.Store({
 
                 Finally, the memory generated for the game is a proof of my competence generating documentation. I believe that it is really important to do this for all projects, otherwise, important information tends to be forgotten and then it is harder to iterate down the line.`,
                 layoutMedia:[
-                    require('@/assets/projects/SCLogo.png')
+                    {
+                        type: 'IMAGE',
+                        src: require('@/assets/projects/SCLogo.png')
+                    }
                 ],
                 linkButtons: [
                     {

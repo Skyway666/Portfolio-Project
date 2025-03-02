@@ -1,7 +1,7 @@
 <template>
   <div :class="`app ${$route.meta.mainViewClass}`">
     <!-- Show main menu only if the current view is not CV -->
-    <div v-if="$route.name !== 'CV'" style="padding-bottom:100px">
+    <div v-if="$route.name !== 'CV'" style="padding-bottom:130px">
       <MainMenu/>
     </div>
     
