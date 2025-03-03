@@ -64,9 +64,7 @@
             <!-- Contributions -->
             <div class="text-section-title" v-if="project.contributions.length != 0"> Contributions </div>
             <ul class="text-section-contributions">
-                <li v-for="(contribution, index) in project.contributions" :key="index">
-                    {{ contribution }}
-                </li>
+                <li v-for="(contribution, index) in project.contributions" :key="index" v-html="contribution"/>
             </ul>
         </div>
         

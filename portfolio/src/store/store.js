@@ -132,6 +132,47 @@ export default new Vuex.Store({
             },
             {
                 // Projects view
+                title: 'Qatar 3-2-1 museum',
+                shortDescription: `Qatar Olympic and Sports Musem`,
+                thumbnail: require('@/assets/projects/Qatar321Logo.png'),
+
+                // Detail view
+                specifications: {
+                    year: "2021",
+                    duration: "6 months",
+                    teamSize: "15"
+                },
+                longDescription: `Sngular was a crucial actor in the museum's conception, with the tendering and development of over 30 productions, their space and hardware recomendations. The project's scope also encompassed the development of a CMS in the form of a web portal, which allowed for the updating of the production's contents.
+                
+                Although all productions followed the sports theme, their designs varied greatly, ranging from simple "web-page-style" applications with images and text to an Archery minigame with real-time 3D graphics, played with a physical device representing a bow and arrow.`,
+                layoutMedia:[
+                    {
+                        type: 'VIDEO',
+                        src: 'https://www.youtube.com/embed/Qxt9G5akVOE?si=pPpCPB_dYBU8LNkR'
+                    }
+                ],
+                linkButtons: [
+                    {
+                        text: "Webpage",
+                        link: 'https://321qosm.org.qa/en/'
+                    }
+                ],
+                tags: [
+                    "Unity",
+                    "Sngular",
+                    "Programming",
+                    "Acciona"
+                ],
+                contributions: [
+                    "<b>Humanity at play</b>: Multiple clients with their interface connected to a main application that renders a globe showing the location of each client.",
+                    "<a href=\"https://youtu.be/Qxt9G5akVOE?si=7pGL133YH7Kb7t-j&t=240\"><b>Archery</b></a>: FPS Style archery minigame",
+                    "<b>Ancient egyptian boating</b>: Quick Time Event style boat fighting minigame",
+                    "<a href=\"https://youtu.be/Qxt9G5akVOE?si=7pGL133YH7Kb7t-j&t=217\"><b>Everyday play</b></a>: Interactive picture about classic child games",
+                    "<b>Polo, Spectacular Sports in the Roman World, Sports in the Sea, Tournament Sports</b>: Scroll with images and text"
+                ]
+            },
+            {
+                // Projects view
                 title: 'Dungeon Brawler',
                 shortDescription: `Competitive 2D fighting game, built in C++`,
                 thumbnail: require('@/assets/projects/DungeonBrawlerLogo.png'),
