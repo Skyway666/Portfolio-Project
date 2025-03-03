@@ -1,9 +1,7 @@
 <template>
   <div :class="`app ${$route.meta.mainViewClass}`">
     <!-- Show main menu only if the current view is not CV -->
-    <div v-if="$route.name !== 'CV'" style="padding-bottom:130px">
-      <MainMenu/>
-    </div>
+    <MainMenu v-if="$route.name !== 'CV'"/>
     
     <!-- Main view -->
     <router-view/>
@@ -40,19 +38,19 @@ export default {
   }
 
   .main-view-narrow{
-    padding: 0% 20%;
+    padding: 130px 20%;
   }
   .main-view-wide{
-    padding: 0%  5%;
+    padding: 130px  5%;
   }
 
   /*Portrait*/
   @media (max-width: 480px){
     .main-view-narrow{
-        padding: 0px 5%;
+        padding: 130px 5%;
     }
     .main-view-wide{
-        padding: 0px 5%;
+        padding: 130px 5%;
     }
   }
 </style>

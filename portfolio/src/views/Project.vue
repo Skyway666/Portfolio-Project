@@ -12,6 +12,7 @@
                     allowfullscreen/>
             </div>
         </div>
+
         <!-- Text section -->
         <div class="text-section">
             <!-- Header -->
@@ -41,14 +42,17 @@
                     </div>
                 </div>
             </div>
+
             <!-- Long description -->
             <div v-html="project.longDescription"/>
+
             <!-- Links -->
-                <div class="text-section-links">
+            <div class="text-section-links">
                 <sui-button v-for="(linkButton, index) in project.linkButtons" @click="openLink(linkButton.link)" :key="index">
                     {{ linkButton.text }}
                 </sui-button>
-                </div>
+            </div>
+
             <!-- Tags -->
             <div class="text-section-tags">
                 <div class="text-section-tags-label">Tags:</div>
@@ -56,6 +60,7 @@
                     {{tag}}
                 </sui-label>
             </div>
+
             <!-- Contributions -->
             <div class="text-section-title" v-if="project.contributions.length != 0"> Contributions </div>
             <ul class="text-section-contributions">
@@ -64,16 +69,17 @@
                 </li>
             </ul>
         </div>
-    <!-- Navigation -->
-    <div class="navigation">
-        <sui-button class="navigation-next" v-if="$route.params.id != 0" 
-            color="grey" size="large" icon="left arrow" 
-            @click="$router.push('/project/' + (Number($route.params.id) - 1))"/>
-        <sui-button class="navigation-previous" v-if="$route.params.id != $store.state.projects.length - 1" 
-            color="grey" size="large" icon="right arrow" 
-            @click="$router.push('/project/' + (Number($route.params.id) + 1))"/>
+        
+        <!-- Navigation -->
+        <div class="navigation">
+            <sui-button class="navigation-next" v-if="$route.params.id != 0" 
+                color="grey" size="large" icon="left arrow" 
+                @click="$router.push('/project/' + (Number($route.params.id) - 1))"/>
+            <sui-button class="navigation-previous" v-if="$route.params.id != $store.state.projects.length - 1" 
+                color="grey" size="large" icon="right arrow" 
+                @click="$router.push('/project/' + (Number($route.params.id) + 1))"/>
+        </div>
     </div>
-</div>
 </template>
 <script>
 export default {
