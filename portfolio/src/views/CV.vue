@@ -154,37 +154,37 @@ export default {
             projects: [
                 {
                     title: "Dungeon Brawler",
-                    titleHref: "https://angryfrogdev.github.io/Dungeon-Brawler/",
+                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/4",
                     description: "Street Fighter style fighting game running in C++"
                 },
                 {
                     title: "Malita, Soul of a Warrior",
-                    titleHref: "https://rustiktie.github.io/project-3-bcn/",
+                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/6",
                     description: "3D BeatEmUp running in C++ self crafted engine"
                 },
                 {
                     title: "Mirror",
-                    titleHref: "https://github.com/Skyway666/TFG-investigation",
+                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/11",
                     description: "Reflection tool/library for C++ (Final Degree Project)"
                 },
                 {
                     title: "Asun",
-                    titleHref: "https://dynamiccast.itch.io/asun",
+                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/8",
                     description: "Survival beat em up Game Jam game, based on the theme 'Sorpresa', built in Unity"
                 },
                 {
                     title: "Bubble Ball",
-                    titleHref: "https://www.youtube.com/watch?v=y2ManVDD-fM",
+                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/9",
                     description: "Four player party game Game Jam game, based on the theme 'Water', built in Unity"
                 },
                 {
                     title: "Magic Gone Wrong",
-                    titleHref: "https://skyway666.itch.io/magic-gone-wrong",
+                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/10",
                     description: "'Vampire Survivor' style top down shooter, based on the theme 'Magic'"
                 },
                 {
-                    title: "Om Nom Pirates Clans",
-                    titleHref: "https://www.youtube.com/watch?v=DX_WiFLyFMI",
+                    title: "Om Nom Sea Brawl",
+                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/2",
                     description: "Strategy mobile game with the OmNom IP in collaboration with Zeptolab"
                 },
                 {
@@ -194,7 +194,7 @@ export default {
                 },
                 {
                     title: "Qatar Olympic and sports museum",
-                    titleHref: "https://321qosm.org.qa/en/",
+                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/3",
                     description: "Digital product for a sports themed museum in Qatar"
                 },
             ]
