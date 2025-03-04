@@ -434,6 +434,47 @@ export default new Vuex.Store({
             },
             {
                 // Projects view
+                title: 'Magic Gone Wrong',
+                shortDescription: `Top Down magic themed Shoot Em Up`,
+                thumbnail: require('@/assets/projects/MGWLogo.png'),
+
+                // Detail view
+                specifications: {
+                    year: "2023",
+                    duration: "3 days",
+                    teamSize: "5"
+                },
+                longDescription: `Magic Gone Wrong is the result of the SOA Game Jam, where the theme was individual for each team, in our case "Magic Gone Wrong" (we didn't rack our brains). The main character is a Mage who doesn't control his Magic, therefore performs random attack patters to which the player needs to adapt his movement and strategy to.
+                
+                The idea behind the conception of the SOA Game Jam was to familiarize the members of the programming team in Sngular with SOA, the architecture package developed for <a href="https://skyway666.github.io/Portfolio-Project/#/project/2">Om Nom Sea Brawl</a> based on the <a href="https://www.youtube.com/watch?v=raQ3iHhE_Kk&t=334s">“Game Architecture with Scriptable Objects” talk by Ryan Hipple</a>`,
+                layoutMedia:[
+                    {
+                        type: 'VIDEO',
+                        src: 'https://www.youtube.com/embed/0FWkNsNILFA?si=vWThxs5t-MGx8lVc'
+                    }
+                ],
+                linkButtons: [
+                    {
+                        text: "Webpage",
+                        link: 'https://skyway666.itch.io/magic-gone-wrong'
+                    }
+                ],
+                tags: [
+                    "Unity",
+                    "GameJam",
+                    "Programming",
+                    "Sngular"
+                ],
+                contributions: [
+                    "Character controller",
+                    "Player controller",
+                    "UI",
+                    "Gate System",
+                    "Putting different systems together"
+                ]
+            },
+            {
+                // Projects view
                 title: 'Mirror',
                 shortDescription: `Reflection system for C++`,
                 thumbnail: require('@/assets/projects/MirrorLogo.png'),
