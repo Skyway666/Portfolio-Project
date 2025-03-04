@@ -3,7 +3,7 @@
         <div class="filters">
             <sui-button v-for="(filter, index) in filters" :key="index"
               v-show="filterIsVisible(filter)"
-              :color="filter.state ? 'green': null" 
+              :color="filter.state ? 'black': null" 
               @click="filter.state = !filter.state">
                 {{ filter.name }}
               </sui-button>
@@ -34,37 +34,37 @@ export default {
       filters: [
         {
           name: "Unity",
-          state: false,
+          state: true,
           isKeyProjectFilter: true
         },
         {
           name: "C++",
-          state: false,
+          state: true,
           isKeyProjectFilter: true
         },
         {
           name: "Professional",
-          state: false,
+          state: true,
           isKeyProjectFilter: true
         },
         {
           name: "Education",
-          state: false,
+          state: true,
           isKeyProjectFilter: true
         },
         {
           name: "Personal",
-          state: false,
+          state: true,
           isKeyProjectFilter: true
         },
         {
           name: "Design",
-          state: false,
+          state: true,
           isKeyProjectFilter: false
         },
         {
           name: "Art",
-          state: false,
+          state: true,
           isKeyProjectFilter: false
         }
       ],
@@ -123,7 +123,8 @@ export default {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    flex-grow: 1;
+    justify-content: flex-start;
   }
 
   /*Filters*/
