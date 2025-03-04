@@ -34,9 +34,10 @@ export default new Vuex.Store({
                     }
                 ],
                 tags: [
-                    "Unity",
-                    "Sngular",
                     "Programming",
+                    "Unity",
+                    "Professional",
+                    "Sngular",
                     "HOMA"
                 ],
                 contributions: [
@@ -76,9 +77,10 @@ export default new Vuex.Store({
                     }
                 ],
                 tags: [
-                    "Unity",
-                    "Sngular",
                     "Programming",
+                    "Unity",
+                    "Professional",
+                    "Sngular",
                     "HOMA"
                 ],
                 contributions: [
@@ -115,10 +117,11 @@ export default new Vuex.Store({
                     
                 ],
                 tags: [
-                    "Unity",
-                    "Sngular",
                     "Programming",
-                    "Zeptolab"
+                    "Unity",
+                    "Professional",
+                    "Sngular",
+                    "Zeptolab",
                 ],
                 contributions: [
                     "Scriptable Objects based architecture",
@@ -158,9 +161,10 @@ export default new Vuex.Store({
                     }
                 ],
                 tags: [
-                    "Unity",
-                    "Sngular",
                     "Programming",
+                    "Unity",
+                    "Professional",
+                    "Sngular",
                     "Acciona"
                 ],
                 contributions: [
@@ -199,9 +203,11 @@ export default new Vuex.Store({
                     }
                 ],
                 tags: [
+                    "Programming",
                     "C++",
-                    "University",
-                    "Programming"
+                    "Education",
+                    "CITM",
+                    "Project 2"
                 ],
                 contributions: [
                     "Character controller",
@@ -242,9 +248,11 @@ export default new Vuex.Store({
                     }
                 ],
                 tags: [
+                    "Programming",
                     "C++",
-                    "University",
-                    "Programming"
+                    "Education",
+                    "CITM",
+                    "Engines"
                 ],
                 contributions: [
                     "Information about hardware and application",
@@ -301,9 +309,11 @@ export default new Vuex.Store({
                     }
                 ],
                 tags: [
+                    "Programming",
                     "C++",
-                    "University",
-                    "Programming"
+                    "Education",
+                    "CITM",
+                    "Project 3"
                 ],
                 contributions: [
                     "Improving scripting system and adapting it to the rest of subsystems (UI, Animations, Physics...)",
@@ -338,9 +348,11 @@ export default new Vuex.Store({
                     }
                 ],
                 tags: [
+                    "Programming",
                     "Unity",
-                    "University",
-                    "Programming"
+                    "Education",
+                    "CITM",
+                    "AI"
                 ],
                 contributions: [
                     "Camera controller",
@@ -381,9 +393,10 @@ export default new Vuex.Store({
                     }
                 ],
                 tags: [
+                    "Programming",
                     "Unity",
-                    "GameJam",
-                    "Programming"
+                    "Personal",
+                    "GameJam"
                 ],
                 contributions: [
                     "Player controller",
@@ -422,9 +435,10 @@ export default new Vuex.Store({
                     }
                 ],
                 tags: [
+                    "Programming",
                     "Unity",
-                    "GameJam",
-                    "Programming"
+                    "Personal",
+                    "GameJam"
                 ],
                 contributions: [
                     "Player controller",
@@ -460,9 +474,10 @@ export default new Vuex.Store({
                     }
                 ],
                 tags: [
-                    "Unity",
-                    "GameJam",
                     "Programming",
+                    "Unity",
+                    "Professional",
+                    "GameJam",
                     "Sngular"
                 ],
                 contributions: [
@@ -505,9 +520,9 @@ export default new Vuex.Store({
                     }
                 ],
                 tags: [
-                    "C++",
-                    "University",
                     "Programming",
+                    "C++",
+                    "Education",
                     "Final Degree Project"
                 ],
                 contributions: [
@@ -542,9 +557,10 @@ export default new Vuex.Store({
                     }
                 ],
                 tags: [
+                    "Programming",
                     "C++",
-                    "University",
-                    "Programming"
+                    "Education",
+                    "Advanced Graphics Programming"
                 ],
                 contributions: [
                     "Deferred renderer",
@@ -583,9 +599,10 @@ export default new Vuex.Store({
                     }
                 ],
                 tags: [
+                    "Design",
                     "RPGMaker",
-                    "University",
-                    "Design"
+                    "Education",
+                    "Level Design"
                 ],
                 contributions: [
 

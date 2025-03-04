@@ -1,13 +1,18 @@
 <template>
     <div class="background">
-        <!-- Filters 
-        <div>
-            <sui-button v-for="i in 5" :key="i">Filter {{i}}</sui-button>
-        </div>-->
+        <div class="filters">
+            <sui-button v-for="(filter, index) in filters" :key="index"
+              v-show="filterIsVisible(filter)"
+              :color="filter.state ? 'green': null" 
+              @click="filter.state = !filter.state">
+                {{ filter.name }}
+              </sui-button>
+        </div>
         <!-- Grid -->
         <div class="projects-grid">
             <!-- Project -->
-            <router-link class="project" v-for="(project, index) in $store.state.projects" :key="index" 
+            <router-link class="project" v-for="(project, index) in $store.state.projects" :key="index"
+              v-show="projectIsVisible(project)"
               :to="'/project/' + index">
               <!-- Image -->
               <img :src="project.thumbnail" class="project-image" @load="resizeImageToContainer($event)"/>
@@ -24,6 +29,48 @@
 <script>
 export default {
   name: "Projects",
+  data(){
+    return{
+      filters: [
+        {
+          name: "Unity",
+          state: false,
+          isKeyProjectFilter: true
+        },
+        {
+          name: "C++",
+          state: false,
+          isKeyProjectFilter: true
+        },
+        {
+          name: "Professional",
+          state: false,
+          isKeyProjectFilter: true
+        },
+        {
+          name: "Education",
+          state: false,
+          isKeyProjectFilter: true
+        },
+        {
+          name: "Personal",
+          state: false,
+          isKeyProjectFilter: true
+        },
+        {
+          name: "Design",
+          state: false,
+          isKeyProjectFilter: false
+        },
+        {
+          name: "Art",
+          state: false,
+          isKeyProjectFilter: false
+        }
+      ],
+      showKeyProjects: true
+    }
+  },
   methods: {
     resizeImageToContainer(event) {
       // Get reference to the image element and its container
@@ -32,7 +79,12 @@ export default {
       
       // Compute their aspect ratios
       const imgRatio = img.naturalWidth / img.naturalHeight;
+
+      // Handle container being hidden
+      var prevDisplayValue = container.style.display;
+      container.style.display = 'block';
       const containerRatio = container.offsetWidth / container.offsetHeight;
+      container.style.display = prevDisplayValue;
 
       // More horizontal than container, set width and adapt height
       if (imgRatio > containerRatio) 
@@ -46,6 +98,20 @@ export default {
         img.style.height = '100%';
         img.style.maxWidth = '100%';
       }
+    },
+    filterIsVisible(filter){
+      return this.showKeyProjects ? filter.isKeyProjectFilter : true;
+    },
+    projectIsVisible(project){
+      // Make a list with the current active filters
+      var activeFilters = [];
+      this.filters.forEach((filter) => {
+        if(this.filterIsVisible(filter) && filter.state)
+          activeFilters.push(filter.name);
+      });
+
+      // Check if some of the tags matches some of the filters
+      return project.tags.some(projectTag => activeFilters.includes(projectTag));
     }
   },
 }
@@ -59,6 +125,13 @@ export default {
     width: 100%;
     height: 100%;
   }
+
+  /*Filters*/
+  .filters{
+    margin-bottom: 30px;
+  }
+
+  /*Projects*/
   .projects-grid{
     display: flex;
     flex-direction: row;
