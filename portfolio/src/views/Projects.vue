@@ -129,7 +129,12 @@ export default {
 
   /*Filters*/
   .filters{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 30px;
+    gap: 5px;
   }
 
   /*Projects*/
