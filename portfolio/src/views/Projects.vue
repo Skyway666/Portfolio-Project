@@ -11,17 +11,18 @@
         <!-- Grid -->
         <div class="projects-grid">
             <!-- Project -->
-            <router-link class="project" v-for="(project, index) in $store.state.projects" :key="index"
+            <div class="project" v-for="(project, index) in $store.state.projects" :key="index"
               v-show="projectIsVisible(project)"
-              :to="'/project/' + index">
+              @click="onProjectClicked(index)">
               <!-- Image -->
               <img :src="project.thumbnail" class="project-image" @load="resizeImageToContainer($event)"/>
               <!-- Overlay -->
               <div class="project-overlay" >
                   <div class="project-title">{{project.title}}</div>
                   <div class="project-description">{{project.shortDescription}}</div>
+                  <sui-icon v-show="isTouchInput()" class="project-click-cta" name="hand point up"/>
               </div>
-            </router-link>
+            </div>
         </div>
     </div>
 </template>
@@ -68,7 +69,8 @@ export default {
           isKeyProjectFilter: false
         }
       ],
-      showKeyProjects: true
+      showKeyProjects: true,
+      lastClickedProjectIndex: -1
     }
   },
   methods: {
@@ -112,6 +114,18 @@ export default {
 
       // Check if some of the tags matches some of the filters
       return project.tags.some(projectTag => activeFilters.includes(projectTag));
+    },
+    isTouchInput(){
+      return window.matchMedia("(pointer: coarse)").matches
+    },
+    onProjectClicked(projectIndex){
+      // Only allow project to be clicked on tactile they were already clicked
+      if(this.isTouchInput() && this.lastClickedProjectIndex != projectIndex){
+        this.lastClickedProjectIndex = projectIndex;
+      }
+      else{
+        this.$router.push('/project/' + projectIndex);
+      }
     }
   },
 }
@@ -175,6 +189,7 @@ export default {
     height: 100%;
     background: rgba(0, 0, 0, 0.8); 
     color: white;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -186,6 +201,24 @@ export default {
   }
   .project:hover .project-overlay {
     opacity: 1;
+    cursor: pointer;
+  }
+
+  @keyframes click{
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    40% { transform: translateY(-20px) rotate(0deg);}
+    50% { transform: translateY(-16px) rotate(-20deg);}
+    60% { transform: translateY(-20px) rotate(0deg);}
+  }
+
+  .project-click-cta{
+    position: absolute;
+    right: 0;
+    bottom: -30%;
+    animation: click 2s infinite;
+    font-size: 40px;
+    color: #39FF14;
+    text-shadow: 3px 3px 8px rgba(1, 1, 1, 0.3);
   }
 
   @media (max-width: 480px){
