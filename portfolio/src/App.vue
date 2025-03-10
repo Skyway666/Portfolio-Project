@@ -15,7 +15,8 @@ import 'semantic-ui-css/semantic.min.css';
 export default {
   name: 'App',
   created(){
-    document.title = "Lucas García Mateu - Developer Portfolio"
+    document.title = "Lucas García Mateu - Developer Portfolio";
+    this.$store.dispatch("loadProjects");
   },
   components: { 
     MainMenu
