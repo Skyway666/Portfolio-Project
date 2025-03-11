@@ -217,7 +217,7 @@ export default {
     bottom: -30%;
     animation: click 2s infinite;
     font-size: 40px;
-    color: #39FF14;
+    color: #3c91ff;
     text-shadow: 3px 3px 8px rgba(1, 1, 1, 0.3);
   }
 
