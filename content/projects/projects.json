@@ -3,7 +3,7 @@
       "name": "archano",
       "title": "Archano",
       "shortDescription": "Archerolike game themed with a cute necromancer mage",
-      "thumbnail": "/content/projects/ArchanoLogo.png",
+      "thumbnail": "./content/projects/ArchanoLogo.png",
       "specifications": {
         "year": "2023",
         "duration": "1 month",
@@ -13,7 +13,7 @@
       "layoutMedia": [
         {
           "type": "IMAGE",
-          "src": "/content/projects/ArchanoLogo.png"
+          "src": "./content/projects/ArchanoLogo.png"
         }
       ],
       "linkButtons": [
@@ -42,7 +42,7 @@
       "name": "robot-revolver",
       "title": "Robot Revolver",
       "shortDescription": "Archero like game themed with robots in the wild west",
-      "thumbnail": "/content/projects/RRLogo.png",
+      "thumbnail": "./content/projects/RRLogo.png",
       "specifications": {
         "year": "2023",
         "duration": "1 month",
@@ -52,7 +52,7 @@
       "layoutMedia": [
         {
           "type": "IMAGE",
-          "src": "/content/projects/RRLogo.png"
+          "src": "./content/projects/RRLogo.png"
         }
       ],
       "linkButtons": [
@@ -81,7 +81,7 @@
       "name": "om-nom-sea-brawl",
       "title": "Om Nom Sea Brawl",
       "shortDescription": "Strategy mobile game with the OmNom IP in collaboration with Zeptolab",
-      "thumbnail": "/content/projects/ONSBLogo.png",
+      "thumbnail": "./content/projects/ONSBLogo.png",
       "specifications": {
         "year": "2021",
         "duration": "6 months",
@@ -116,7 +116,7 @@
       "name": "qatar-museum",
       "title": "Qatar 3-2-1 museum",
       "shortDescription": "Qatar Olympic and Sports Musem",
-      "thumbnail": "/content/projects/Qatar321Logo.png",
+      "thumbnail": "./content/projects/Qatar321Logo.png",
       "specifications": {
         "year": "2021",
         "duration": "6 months",
@@ -154,7 +154,7 @@
       "name": "dungeon-brawler",
       "title": "Dungeon Brawler",
       "shortDescription": "Competitive 2D fighting game, built in C++",
-      "thumbnail": "/content/projects/DungeonBrawlerLogo.png",
+      "thumbnail": "./content/projects/DungeonBrawlerLogo.png",
       "specifications": {
         "year": "2018",
         "duration": "3 months",
@@ -193,7 +193,7 @@
       "name": "kuroko-engine",
       "title": "Kuroko Engine",
       "shortDescription": "3D game engine built in C++",
-      "thumbnail": "/content/projects/KurokoLogo.png",
+      "thumbnail": "./content/projects/KurokoLogo.png",
       "specifications": {
         "year": "2019",
         "duration": "3 months",
@@ -240,7 +240,7 @@
       "name": "malita",
       "title": "Malita, Soul of a Warrior",
       "shortDescription": "Fast-paced beat 'em up game inspired by the universe of Battle Angel Alita",
-      "thumbnail": "/content/projects/MalitaLogo.png",
+      "thumbnail": "./content/projects/MalitaLogo.png",
       "specifications": {
         "year": "2019",
         "duration": "3 months",
@@ -250,7 +250,7 @@
       "layoutMedia": [
         {
           "type": "IMAGE",
-          "src": "/content/projects/MalitaLogo.png"
+          "src": "./content/projects/MalitaLogo.png"
         },
         {
           "type": "VIDEO",
@@ -283,7 +283,7 @@
       "name": "apocalypse-tycoon",
       "title": "Apocalypse Tycoon",
       "shortDescription": "\"Sims like\" AI based game, built in Unity",
-      "thumbnail": "/content/projects/ATLogo.png",
+      "thumbnail": "./content/projects/ATLogo.png",
       "specifications": {
         "year": "2018",
         "duration": "3 months",
@@ -322,7 +322,7 @@
       "name": "asun",
       "title": "Asun",
       "shortDescription": "First edition of the Gran CITM game jam with the theme \"Surprise\" (\"Sorpresa\" in Spanish)",
-      "thumbnail": "/content/projects/AsunLogo.png",
+      "thumbnail": "./content/projects/AsunLogo.png",
       "specifications": {
         "year": "2019",
         "duration": "1 day",
@@ -356,7 +356,7 @@
       "name": "bubble-ball",
       "title": "Bubble Ball",
       "shortDescription": "Second edition of the Gran CITM game jam with the theme \"Water\"",
-      "thumbnail": "/content/projects/BBLogo.png",
+      "thumbnail": "./content/projects/BBLogo.png",
       "specifications": {
         "year": "2019",
         "duration": "1 day",
@@ -395,7 +395,7 @@
       "name": "magic-gone-wrong",
       "title": "Magic Gone Wrong",
       "shortDescription": "Top Down magic themed Shoot Em Up",
-      "thumbnail": "/content/projects/MGWLogo.png",
+      "thumbnail": "./content/projects/MGWLogo.png",
       "specifications": {
         "year": "2023",
         "duration": "3 days",
@@ -433,7 +433,7 @@
       "name": "mirror",
       "title": "Mirror",
       "shortDescription": "Reflection system for C++",
-      "thumbnail": "/content/projects/MirrorLogo.png",
+      "thumbnail": "./content/projects/MirrorLogo.png",
       "specifications": {
         "year": "2019",
         "duration": "3 months",
@@ -468,7 +468,7 @@
       "name": "advanced-graphics-engine",
       "title": "Advanced graphics engine",
       "shortDescription": "3D graphics engine developed in the C++ QT framework by a team of 2 members",
-      "thumbnail": "/content/projects/AGLogo.png",
+      "thumbnail": "./content/projects/AGLogo.png",
       "specifications": {
         "year": "2020",
         "duration": "1 month",
@@ -478,7 +478,7 @@
       "layoutMedia": [
         {
           "type": "IMAGE",
-          "src": "/content/projects/AGLogo.png"
+          "src": "./content/projects/AGLogo.png"
         }
       ],
       "linkButtons": [
@@ -504,7 +504,7 @@
       "name": "swamp-chaos",
       "title": "Swamp Chaos",
       "shortDescription": "Narrative game which features multiple decisions and endings",
-      "thumbnail": "/content/projects/SCLogo.png",
+      "thumbnail": "./content/projects/SCLogo.png",
       "specifications": {
         "year": "2020",
         "duration": "1 month",
@@ -514,7 +514,7 @@
       "layoutMedia": [
         {
           "type": "IMAGE",
-          "src": "/content/projects/SCLogo.png"
+          "src": "./content/projects/SCLogo.png"
         }
       ],
       "linkButtons": [
