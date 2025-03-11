@@ -70,12 +70,12 @@
         
         <!-- Navigation -->
         <div class="navigation">
-            <sui-button class="navigation-next" v-if="$route.params.id != 0" 
+            <sui-button class="navigation-previous" v-if="projectIndex != 0"
                 color="grey" size="large" icon="left arrow" 
-                @click="$router.push('/project/' + (Number($route.params.id) - 1))"/>
-            <sui-button class="navigation-previous" v-if="$route.params.id != $store.state.projects.length - 1" 
+                @click="$router.push('/project/' + getProjectName(projectIndex - 1))"/>
+            <sui-button class="navigation-next" v-if="projectIndex != $store.getters.projects.length - 1" 
                 color="grey" size="large" icon="right arrow" 
-                @click="$router.push('/project/' + (Number($route.params.id) + 1))"/>
+                @click="$router.push('/project/' + getProjectName(projectIndex + 1))"/>
         </div>
     </div>
 </template>
@@ -84,11 +84,17 @@ export default {
     methods: {
         openLink(link){
             window.open(link);
+        },
+        getProjectName(projectIndex){
+            return this.$store.getters.projects[projectIndex].name;
         }
     },
     computed: {
         project() {
-            return this.$store.state.projects[this.$route.params.id];
+            return this.$store.getters.projects.find(project => project.name === this.$route.params.name);
+        },
+        projectIndex(){
+            return this.$store.getters.projects.findIndex(project => project.name === this.$route.params.name);
         }
     }
 }
@@ -197,16 +203,17 @@ export default {
     }
     .navigation-previous{
         position: absolute;
-        right: 0;
+        left: 0;
         bottom: 0;
         top: 0;
     }
     .navigation-next{
         position: absolute;
-        left: 0;
+        right: 0;
         bottom: 0;
         top: 0;
     }
+
 
     @media (max-width: 480px){
         .background{

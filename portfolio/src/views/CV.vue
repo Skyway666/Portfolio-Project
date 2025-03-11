@@ -154,37 +154,37 @@ export default {
             projects: [
                 {
                     title: "Dungeon Brawler",
-                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/4",
+                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/dungeon-brawler",
                     description: "Street Fighter style fighting game running in C++"
                 },
                 {
                     title: "Malita, Soul of a Warrior",
-                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/6",
+                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/malita",
                     description: "3D BeatEmUp running in C++ self crafted engine"
                 },
                 {
                     title: "Mirror",
-                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/11",
+                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/mirror",
                     description: "Reflection tool/library for C++ (Final Degree Project)"
                 },
                 {
                     title: "Asun",
-                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/8",
+                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/asun",
                     description: "Survival beat em up Game Jam game, based on the theme 'Sorpresa', built in Unity"
                 },
                 {
                     title: "Bubble Ball",
-                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/9",
+                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/bubble-ball",
                     description: "Four player party game Game Jam game, based on the theme 'Water', built in Unity"
                 },
                 {
                     title: "Magic Gone Wrong",
-                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/10",
+                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/magic-gone-wrong",
                     description: "'Vampire Survivor' style top down shooter, based on the theme 'Magic'"
                 },
                 {
                     title: "Om Nom Sea Brawl",
-                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/2",
+                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/om-nom-sea-brawl",
                     description: "Strategy mobile game with the OmNom IP in collaboration with Zeptolab"
                 },
                 {
@@ -194,7 +194,7 @@ export default {
                 },
                 {
                     title: "Qatar Olympic and sports museum",
-                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/3",
+                    titleHref: "https://skyway666.github.io/Portfolio-Project/#/project/qatar-museum",
                     description: "Digital product for a sports themed museum in Qatar"
                 },
             ]

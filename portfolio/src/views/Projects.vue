@@ -1,19 +1,17 @@
 <template>
     <div class="background">
         <div class="filters">
-            <sui-button v-for="(filter, index) in filters" :key="index"
-              v-show="filterIsVisible(filter)"
+            <sui-button v-for="(filter, index) in $store.getters.filters" :key="index"
               :color="filter.state ? 'black': null" 
-              @click="filter.state = !filter.state">
+              @click="$store.commit('toggleFilter', filter.name)">
                 {{ filter.name }}
               </sui-button>
         </div>
         <!-- Grid -->
         <div class="projects-grid">
             <!-- Project -->
-            <div class="project" v-for="(project, index) in $store.state.projects" :key="index"
-              v-show="projectIsVisible(project)"
-              @click="onProjectClicked(index)">
+            <div class="project" v-for="(project, index) in $store.getters.projects" :key="index"
+              @click="onProjectClicked(project.name)">
               <!-- Image -->
               <img :src="project.thumbnail" class="project-image" @load="resizeImageToContainer($event)"/>
               <!-- Overlay -->
@@ -32,49 +30,11 @@ export default {
   name: "Projects",
   data(){
     return{
-      filters: [
-        {
-          name: "Unity",
-          state: true,
-          isKeyProjectFilter: true
-        },
-        {
-          name: "C++",
-          state: true,
-          isKeyProjectFilter: true
-        },
-        {
-          name: "Professional",
-          state: true,
-          isKeyProjectFilter: true
-        },
-        {
-          name: "Education",
-          state: true,
-          isKeyProjectFilter: true
-        },
-        {
-          name: "Personal",
-          state: true,
-          isKeyProjectFilter: true
-        },
-        {
-          name: "Design",
-          state: true,
-          isKeyProjectFilter: false
-        },
-        {
-          name: "Art",
-          state: true,
-          isKeyProjectFilter: false
-        }
-      ],
-      showKeyProjects: true,
-      lastClickedProjectIndex: -1
+      lastClickedProjectName: ""
     }
   },
   methods: {
-    resizeImageToContainer(event) {
+    resizeImageToContainer(event){
       // Get reference to the image element and its container
       const img = event.target;  
       const container = img.parentElement;
@@ -101,30 +61,16 @@ export default {
         img.style.maxWidth = '100%';
       }
     },
-    filterIsVisible(filter){
-      return this.showKeyProjects ? filter.isKeyProjectFilter : true;
-    },
-    projectIsVisible(project){
-      // Make a list with the current active filters
-      var activeFilters = [];
-      this.filters.forEach((filter) => {
-        if(this.filterIsVisible(filter) && filter.state)
-          activeFilters.push(filter.name);
-      });
-
-      // Check if some of the tags matches some of the filters
-      return project.tags.some(projectTag => activeFilters.includes(projectTag));
-    },
     isTouchInput(){
       return window.matchMedia("(pointer: coarse)").matches
     },
-    onProjectClicked(projectIndex){
+    onProjectClicked(projectName){
       // Only allow project to be clicked on tactile they were already clicked
-      if(this.isTouchInput() && this.lastClickedProjectIndex != projectIndex){
-        this.lastClickedProjectIndex = projectIndex;
+      if(this.isTouchInput() && this.lastClickedProjectName != projectName){
+        this.lastClickedProjectName = projectName;
       }
       else{
-        this.$router.push('/project/' + projectIndex);
+        this.$router.push('/project/' + projectName);
       }
     }
   },

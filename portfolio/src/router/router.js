@@ -23,7 +23,7 @@ const routes = [
     meta: {mainViewClass: "main-view-wide"}
   },
   {
-    path:'/project/:id',
+    path:'/project/:name',
     name: 'project',
     component: Project,
     meta: {mainViewClass: "main-view-wide"}

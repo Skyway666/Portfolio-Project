@@ -1,5 +1,6 @@
 [
     {
+      "name": "archano",
       "title": "Archano",
       "shortDescription": "Archerolike game themed with a cute necromancer mage",
       "thumbnail": "/content/projects/ArchanoLogo.png",
@@ -38,6 +39,7 @@
       ]
     },
     {
+      "name": "robot-revolver",
       "title": "Robot Revolver",
       "shortDescription": "Archero like game themed with robots in the wild west",
       "thumbnail": "/content/projects/RRLogo.png",
@@ -76,6 +78,7 @@
       ]
     },
     {
+      "name": "om-nom-sea-brawl",
       "title": "Om Nom Sea Brawl",
       "shortDescription": "Strategy mobile game with the OmNom IP in collaboration with Zeptolab",
       "thumbnail": "/content/projects/ONSBLogo.png",
@@ -110,6 +113,7 @@
       ]
     },
     {
+      "name": "qatar-museum",
       "title": "Qatar 3-2-1 museum",
       "shortDescription": "Qatar Olympic and Sports Musem",
       "thumbnail": "/content/projects/Qatar321Logo.png",
@@ -147,6 +151,7 @@
       ]
     },
     {
+      "name": "dungeon-brawler",
       "title": "Dungeon Brawler",
       "shortDescription": "Competitive 2D fighting game, built in C++",
       "thumbnail": "/content/projects/DungeonBrawlerLogo.png",
@@ -185,6 +190,7 @@
       ]
     },
     {
+      "name": "kuroko-engine",
       "title": "Kuroko Engine",
       "shortDescription": "3D game engine built in C++",
       "thumbnail": "/content/projects/KurokoLogo.png",
@@ -231,6 +237,7 @@
       ]
     },
     {
+      "name": "malita",
       "title": "Malita, Soul of a Warrior",
       "shortDescription": "Fast-paced beat 'em up game inspired by the universe of Battle Angel Alita",
       "thumbnail": "/content/projects/MalitaLogo.png",
@@ -273,6 +280,7 @@
       ]
     },
     {
+      "name": "apocalypse-tycoon",
       "title": "Apocalypse Tycoon",
       "shortDescription": "\"Sims like\" AI based game, built in Unity",
       "thumbnail": "/content/projects/ATLogo.png",
@@ -311,6 +319,7 @@
       ]
     },
     {
+      "name": "asun",
       "title": "Asun",
       "shortDescription": "First edition of the Gran CITM game jam with the theme \"Surprise\" (\"Sorpresa\" in Spanish)",
       "thumbnail": "/content/projects/AsunLogo.png",
@@ -344,6 +353,7 @@
       ]
     },
     {
+      "name": "bubble-ball",
       "title": "Bubble Ball",
       "shortDescription": "Second edition of the Gran CITM game jam with the theme \"Water\"",
       "thumbnail": "/content/projects/BBLogo.png",
@@ -382,6 +392,7 @@
       ]
     },
     {
+      "name": "magic-gone-wrong",
       "title": "Magic Gone Wrong",
       "shortDescription": "Top Down magic themed Shoot Em Up",
       "thumbnail": "/content/projects/MGWLogo.png",
@@ -419,6 +430,7 @@
       ]
     },
     {
+      "name": "mirror",
       "title": "Mirror",
       "shortDescription": "Reflection system for C++",
       "thumbnail": "/content/projects/MirrorLogo.png",
@@ -453,6 +465,7 @@
       "contributions": []
     },
     {
+      "name": "advanced-graphics-engine",
       "title": "Advanced graphics engine",
       "shortDescription": "3D graphics engine developed in the C++ QT framework by a team of 2 members",
       "thumbnail": "/content/projects/AGLogo.png",
@@ -488,6 +501,7 @@
       ]
     },
     {
+      "name": "swamp-chaos",
       "title": "Swamp Chaos",
       "shortDescription": "Narrative game which features multiple decisions and endings",
       "thumbnail": "/content/projects/SCLogo.png",
