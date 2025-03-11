@@ -67,7 +67,7 @@ export default new Vuex.Store({
     },
     actions: {
         async loadProjects({commit}){
-            const response = await fetch("/content/projects/projects.json");
+            const response = await fetch("./content/projects/projects.json");
             const projects = await response.json();
             commit('setProjects', projects);
         }
