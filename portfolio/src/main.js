@@ -1,20 +1,20 @@
 // External exports
-import Vue from 'vue'
-import SuiVue from 'semantic-ui-vue';
+import Vue from "vue";
+import SuiVue from "semantic-ui-vue";
 
 // Internal exports
-import App from './App.vue'
-import router from './router/router.js'
-import store from './store/store.js'
-import { MultiplatformPlugin } from './plugins/multiplatform.js'
+import App from "./App.vue";
+import router from "./router/router.js";
+import store from "./store/store.js";
+import { MultiplatformPlugin } from "./plugins/multiplatform.js";
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 Vue.use(SuiVue);
-Vue.use(MultiplatformPlugin)
+Vue.use(MultiplatformPlugin);
 
 new Vue({
-  router,
-  store,
-  render: h => h(App),
-}).$mount('#app')
+    router,
+    store,
+    render: (h) => h(App),
+}).$mount("#app");
