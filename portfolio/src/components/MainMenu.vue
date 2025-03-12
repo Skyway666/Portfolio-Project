@@ -61,77 +61,77 @@
 </template>
 
 <script>
-export default {
-    name: "MainMenu",
-    data() {
-        return {
-            portraitMenuExpanded: false,
-            menuItems: [
-                {
-                    text: "Home",
-                    to: "/",
-                },
-                {
-                    text: "Projects",
-                    to: "/projects",
-                },
-                {
-                    text: "Career",
-                    to: "/career",
-                },
-                {
-                    text: "About",
-                    to: "/about",
-                },
-            ],
-        };
-    },
-    methods: {
-        onPortraitMenuToggled() {
-            this.portraitMenuExpanded = !this.portraitMenuExpanded;
+    export default {
+        name: "MainMenu",
+        data() {
+            return {
+                portraitMenuExpanded: false,
+                menuItems: [
+                    {
+                        text: "Home",
+                        to: "/",
+                    },
+                    {
+                        text: "Projects",
+                        to: "/projects",
+                    },
+                    {
+                        text: "Career",
+                        to: "/career",
+                    },
+                    {
+                        text: "About",
+                        to: "/about",
+                    },
+                ],
+            };
         },
-        onPortraitMenuClicked() {
-            this.portraitMenuExpanded = false;
+        methods: {
+            onPortraitMenuToggled() {
+                this.portraitMenuExpanded = !this.portraitMenuExpanded;
+            },
+            onPortraitMenuClicked() {
+                this.portraitMenuExpanded = false;
+            },
         },
-    },
-    computed: {
-        namePosition() {
-            return this.$isLandscape() ? "left" : "right";
+        computed: {
+            namePosition() {
+                return this.$isLandscape() ? "left" : "right";
+            },
         },
-    },
-};
+    };
 </script>
 
 <style scoped>
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    pointer-events: none;
-}
-.main-menu {
-    padding: 25px 4vw;
-    margin-bottom: 0px !important;
-    pointer-events: all;
-}
-.menu-title {
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
-}
-.menu-button {
-    font-size: 20px;
-    font-weight: bold;
-    padding: 0px 25px;
-    cursor: pointer;
-    pointer-events: all;
-}
-.menu-portrait-buttons {
-    flex-grow: 1;
-}
+    .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        pointer-events: none;
+    }
+    .main-menu {
+        padding: 25px 4vw;
+        margin-bottom: 0px !important;
+        pointer-events: all;
+    }
+    .menu-title {
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .menu-button {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0px 25px;
+        cursor: pointer;
+        pointer-events: all;
+    }
+    .menu-portrait-buttons {
+        flex-grow: 1;
+    }
 </style>

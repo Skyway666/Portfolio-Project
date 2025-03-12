@@ -24,62 +24,62 @@
 </template>
 
 <script>
-export default {
-    name: "Timeline",
-    props: {
-        events: {
-            type: Array,
-            required: true,
+    export default {
+        name: "Timeline",
+        props: {
+            events: {
+                type: Array,
+                required: true,
+            },
+            dotSize: {
+                type: String,
+            },
         },
-        dotSize: {
-            type: String,
+        methods: {
+            lineStyle(index) {
+                return `height: ${
+                    this.events[index] ? this.events[index].eventHeight : 0
+                }px;`;
+            },
         },
-    },
-    methods: {
-        lineStyle(index) {
-            return `height: ${
-                this.events[index] ? this.events[index].eventHeight : 0
-            }px;`;
+        computed: {
+            dotStyle() {
+                return `width: ${this.dotSize}; height: ${this.dotSize}`;
+            },
         },
-    },
-    computed: {
-        dotStyle() {
-            return `width: ${this.dotSize}; height: ${this.dotSize}`;
-        },
-    },
-};
+    };
 </script>
 
 <style scoped>
-.timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-.timeline-step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .timeline-step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.timeline-event {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
+    .timeline-event {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
 
-.timeline-event-content {
-    margin-left: 10px;
-    transform: translateY(-50%);
-}
+    .timeline-event-content {
+        margin-left: 10px;
+        transform: translateY(-50%);
+    }
 
-.timeline-dot {
-    background-color: white;
-    border-radius: 100%;
-}
+    .timeline-dot {
+        background-color: white;
+        border-radius: 100%;
+    }
 
-.timeline-line {
-    border-left: 3px solid white;
-}
+    .timeline-line {
+        border-left: 3px solid white;
+    }
 </style>

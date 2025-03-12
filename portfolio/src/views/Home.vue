@@ -30,35 +30,35 @@
 </template>
 
 <script>
-export default {
-    methods: {
-        onContactMe() {
-            window.location = "mailto:lucasgaricamateu@gmail.com";
+    export default {
+        methods: {
+            onContactMe() {
+                window.location = "mailto:lucasgaricamateu@gmail.com";
+            },
+            onDownloadCV() {
+                const link = document.createElement("a");
+                link.href = "downloads/Lucas Garcia Mateu - CV.pdf"; // Replace with your file path
+                link.download = "Lucas Garcia Mateu - CV.pdf"; // Optional: Set the default file name
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            },
         },
-        onDownloadCV() {
-            const link = document.createElement("a");
-            link.href = "downloads/Lucas Garcia Mateu - CV.pdf"; // Replace with your file path
-            link.download = "Lucas Garcia Mateu - CV.pdf"; // Optional: Set the default file name
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        },
-    },
-};
+    };
 </script>
 
 <style scoped>
-.background {
-    max-width: 500px;
-}
-.title {
-    font-size: 70px;
-    margin-top: -10vh;
-}
-.buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-top: 30px;
-}
+    .background {
+        max-width: 500px;
+    }
+    .title {
+        font-size: 70px;
+        margin-top: -10vh;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 30px;
+    }
 </style>

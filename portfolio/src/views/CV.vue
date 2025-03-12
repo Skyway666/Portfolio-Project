@@ -133,230 +133,231 @@
     </div>
 </template>
 <script>
-import Timeline from "../components/Timeline.vue";
+    import Timeline from "../components/Timeline.vue";
 
-export default {
-    name: "CV",
-    components: {
-        Timeline,
-    },
-    data() {
-        return {
-            links: [
-                {
-                    icon: "phone",
-                    href: "tel:+34 646444233",
-                    display: "+34 646444233",
-                },
-                {
-                    icon: "mail",
-                    href: "mailto:lucasgarciamateu@gmail.com",
-                    display: "lucasgarciamateu@gmail.com",
-                },
-                {
-                    icon: "linkify",
-                    href: "https://skyway666.github.io/Portfolio-Project/",
-                    display: "Portfolio",
-                },
-                {
-                    icon: "github",
-                    href: "https://github.com/Skyway666",
-                    display: "Github",
-                },
-                {
-                    icon: "linkedin",
-                    href: "https://www.linkedin.com/in/lucas-garc%C3%ADa-mateu-517a0b160/",
-                    display: "Linked In",
-                },
-            ],
-            education: [
-                {
-                    title: "Technical High School",
-                    details: "(Emperador Carles, 2014-1016)",
-                    eventHeight: 50,
-                },
-                {
-                    title: "Bachelor’s Degree in Videogames",
-                    details: "(UPC at CITM, 2016-2020)",
-                },
-            ],
-            projects: [
-                {
-                    title: "Dungeon Brawler",
-                    titleHref:
-                        "https://skyway666.github.io/Portfolio-Project/#/project/dungeon-brawler",
-                    description:
-                        "Street Fighter style fighting game running in C++",
-                },
-                {
-                    title: "Malita, Soul of a Warrior",
-                    titleHref:
-                        "https://skyway666.github.io/Portfolio-Project/#/project/malita",
-                    description:
-                        "3D BeatEmUp running in C++ self crafted engine",
-                },
-                {
-                    title: "Mirror",
-                    titleHref:
-                        "https://skyway666.github.io/Portfolio-Project/#/project/mirror",
-                    description:
-                        "Reflection tool/library for C++ (Final Degree Project)",
-                },
-                {
-                    title: "Asun",
-                    titleHref:
-                        "https://skyway666.github.io/Portfolio-Project/#/project/asun",
-                    description:
-                        "Survival beat em up Game Jam game, based on the theme 'Sorpresa', built in Unity",
-                },
-                {
-                    title: "Bubble Ball",
-                    titleHref:
-                        "https://skyway666.github.io/Portfolio-Project/#/project/bubble-ball",
-                    description:
-                        "Four player party game Game Jam game, based on the theme 'Water', built in Unity",
-                },
-                {
-                    title: "Magic Gone Wrong",
-                    titleHref:
-                        "https://skyway666.github.io/Portfolio-Project/#/project/magic-gone-wrong",
-                    description:
-                        "'Vampire Survivor' style top down shooter, based on the theme 'Magic'",
-                },
-                {
-                    title: "Om Nom Sea Brawl",
-                    titleHref:
-                        "https://skyway666.github.io/Portfolio-Project/#/project/om-nom-sea-brawl",
-                    description:
-                        "Strategy mobile game with the OmNom IP in collaboration with Zeptolab",
-                },
-                {
-                    title: "SOA",
-                    titleHref: "https://www.youtube.com/watch?v=raQ3iHhE_Kk",
-                    description:
-                        "Scriptable Objects Architecture package built for Unity",
-                },
-                {
-                    title: "Qatar Olympic and sports museum",
-                    titleHref:
-                        "https://skyway666.github.io/Portfolio-Project/#/project/qatar-museum",
-                    description:
-                        "Digital product for a sports themed museum in Qatar",
-                },
-            ],
-        };
-    },
-};
+    export default {
+        name: "CV",
+        components: {
+            Timeline,
+        },
+        data() {
+            return {
+                links: [
+                    {
+                        icon: "phone",
+                        href: "tel:+34 646444233",
+                        display: "+34 646444233",
+                    },
+                    {
+                        icon: "mail",
+                        href: "mailto:lucasgarciamateu@gmail.com",
+                        display: "lucasgarciamateu@gmail.com",
+                    },
+                    {
+                        icon: "linkify",
+                        href: "https://skyway666.github.io/Portfolio-Project/",
+                        display: "Portfolio",
+                    },
+                    {
+                        icon: "github",
+                        href: "https://github.com/Skyway666",
+                        display: "Github",
+                    },
+                    {
+                        icon: "linkedin",
+                        href: "https://www.linkedin.com/in/lucas-garc%C3%ADa-mateu-517a0b160/",
+                        display: "Linked In",
+                    },
+                ],
+                education: [
+                    {
+                        title: "Technical High School",
+                        details: "(Emperador Carles, 2014-1016)",
+                        eventHeight: 50,
+                    },
+                    {
+                        title: "Bachelor’s Degree in Videogames",
+                        details: "(UPC at CITM, 2016-2020)",
+                    },
+                ],
+                projects: [
+                    {
+                        title: "Dungeon Brawler",
+                        titleHref:
+                            "https://skyway666.github.io/Portfolio-Project/#/project/dungeon-brawler",
+                        description:
+                            "Street Fighter style fighting game running in C++",
+                    },
+                    {
+                        title: "Malita, Soul of a Warrior",
+                        titleHref:
+                            "https://skyway666.github.io/Portfolio-Project/#/project/malita",
+                        description:
+                            "3D BeatEmUp running in C++ self crafted engine",
+                    },
+                    {
+                        title: "Mirror",
+                        titleHref:
+                            "https://skyway666.github.io/Portfolio-Project/#/project/mirror",
+                        description:
+                            "Reflection tool/library for C++ (Final Degree Project)",
+                    },
+                    {
+                        title: "Asun",
+                        titleHref:
+                            "https://skyway666.github.io/Portfolio-Project/#/project/asun",
+                        description:
+                            "Survival beat em up Game Jam game, based on the theme 'Sorpresa', built in Unity",
+                    },
+                    {
+                        title: "Bubble Ball",
+                        titleHref:
+                            "https://skyway666.github.io/Portfolio-Project/#/project/bubble-ball",
+                        description:
+                            "Four player party game Game Jam game, based on the theme 'Water', built in Unity",
+                    },
+                    {
+                        title: "Magic Gone Wrong",
+                        titleHref:
+                            "https://skyway666.github.io/Portfolio-Project/#/project/magic-gone-wrong",
+                        description:
+                            "'Vampire Survivor' style top down shooter, based on the theme 'Magic'",
+                    },
+                    {
+                        title: "Om Nom Sea Brawl",
+                        titleHref:
+                            "https://skyway666.github.io/Portfolio-Project/#/project/om-nom-sea-brawl",
+                        description:
+                            "Strategy mobile game with the OmNom IP in collaboration with Zeptolab",
+                    },
+                    {
+                        title: "SOA",
+                        titleHref:
+                            "https://www.youtube.com/watch?v=raQ3iHhE_Kk",
+                        description:
+                            "Scriptable Objects Architecture package built for Unity",
+                    },
+                    {
+                        title: "Qatar Olympic and sports museum",
+                        titleHref:
+                            "https://skyway666.github.io/Portfolio-Project/#/project/qatar-museum",
+                        description:
+                            "Digital product for a sports themed museum in Qatar",
+                    },
+                ],
+            };
+        },
+    };
 </script>
 <style scoped>
-/*Defaults*/
-p {
-    margin: 0;
-}
-a {
-    color: lightblue;
-}
-div {
-    font-size: small;
-}
-hr.solid {
-    border-top: 1px solid #ffffff;
-    width: 100%;
-}
+    /*Defaults*/
+    p {
+        margin: 0;
+    }
+    a {
+        color: lightblue;
+    }
+    div {
+        font-size: small;
+    }
+    hr.solid {
+        border-top: 1px solid #ffffff;
+        width: 100%;
+    }
 
-/*General containers*/
-.page-background {
-    height: 100vh;
-    width: calc(100vh * 99 / 70);
-    background-color: #3d3d3d;
-    color: white;
-    print-color-adjust: exact;
-    padding: 30px 30px;
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-}
+    /*General containers*/
+    .page-background {
+        height: 100vh;
+        width: calc(100vh * 99 / 70);
+        background-color: #3d3d3d;
+        color: white;
+        print-color-adjust: exact;
+        padding: 30px 30px;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
 
-.left-page-column {
-    width: calc(100% / 3);
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: column;
-}
+    .left-page-column {
+        width: calc(100% / 3);
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+    }
 
-.right-page-column {
-    width: calc((100% / 3) * 2);
-    height: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-content: space-between;
-}
+    .right-page-column {
+        width: calc((100% / 3) * 2);
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-content: space-between;
+    }
 
-/*General elements*/
-.link {
-    cursor: pointer;
-    color: lightblue;
-}
+    /*General elements*/
+    .link {
+        cursor: pointer;
+        color: lightblue;
+    }
 
-.section-container {
-    text-align: left;
-}
+    .section-container {
+        text-align: left;
+    }
 
-.section-title {
-    font-size: 25px;
-    margin-bottom: 10px;
-}
+    .section-title {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
 
-/*Left section*/
-.profile-container {
-    text-align: left;
-}
-.name {
-    font-size: 30px;
-    margin: 0;
-}
+    /*Left section*/
+    .profile-container {
+        text-align: left;
+    }
+    .name {
+        font-size: 30px;
+        margin: 0;
+    }
 
-.position {
-    font-size: 20px;
-}
+    .position {
+        font-size: 20px;
+    }
 
-.timeline-event-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    transform: translateY(0);
-}
+    .timeline-event-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        transform: translateY(0);
+    }
 
-/*Right section*/
-.text-column {
-    width: 45%;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    row-gap: 30px;
-}
+    /*Right section*/
+    .text-column {
+        width: 45%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: 30px;
+    }
 
-.projects-grid {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    row-gap: 30px;
-}
+    .projects-grid {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
 
-.project {
-    width: 32%;
-}
+    .project {
+        width: 32%;
+    }
 
-.project-title {
-    font-size: 17px;
-    text-decoration: underline;
-}
+    .project-title {
+        font-size: 17px;
+        text-decoration: underline;
+    }
 
-@page {
-    size: A4 landscape;
-    margin: 0;
-}
+    @page {
+        size: A4 landscape;
+        margin: 0;
+    }
 </style>
