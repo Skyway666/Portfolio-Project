@@ -1,0 +1,1 @@
+npx prettier --write "**/*.{js,vue,ts,json,md,html,css,scss}"

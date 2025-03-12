@@ -1,6 +1,9 @@
+// Developing
 npm run serve -> Run development build
 ctrl + c -> Stop running development build
+from "portfolio/src" run ".\format.bat" -> Format source files with prettier
 
+// Deploying
 npm run build:dev + serve -s dist -> Run development deploy
 npm run build + Upload files to gh-pages branch -> Deploy
 Deployment:
