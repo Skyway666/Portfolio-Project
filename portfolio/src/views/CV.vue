@@ -93,7 +93,7 @@
                 <div class="section-title">Projects</div>
                 <!-- Projects grid -->
                 <div class="projects-grid"> 
-                    <div class="project" v-for="(project, index) in projects" :key="index">
+                    <div v-for="(project, index) in projects" :key="index" class="project">
                         <a class="project-title" :href="project.titleHref">{{ project.title }}</a>
                         <div>{{ project.description }}</div>
                     </div>

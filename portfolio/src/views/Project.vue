@@ -2,9 +2,10 @@
     <div class="background">
         <!-- Layout media -->
         <div class="graphics-section">
-            <div class="graphic-wrapper" v-for="(layoutMediaItem, index) in project.layoutMedia" :key="index">
-                <img class="graphic" v-if="layoutMediaItem.type == 'IMAGE' " :src="layoutMediaItem.src"/>
-                <iframe class="graphic video" v-if="layoutMediaItem.type == 'VIDEO'"  :src="layoutMediaItem.src" 
+            <div v-for="(layoutMediaItem, index) in project.layoutMedia" :key="index" class="graphic-wrapper">
+                <img v-if="layoutMediaItem.type == 'IMAGE' " :src="layoutMediaItem.src" class="graphic"/>
+                <iframe v-if="layoutMediaItem.type == 'VIDEO'"  :src="layoutMediaItem.src"
+                    class="graphic video" 
                     title="YouTube video player" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -62,7 +63,7 @@
             </div>
 
             <!-- Contributions -->
-            <div class="text-section-title" v-if="project.contributions.length != 0"> Contributions </div>
+            <div v-if="project.contributions.length != 0" class="text-section-title"> Contributions </div>
             <ul class="text-section-contributions">
                 <li v-for="(contribution, index) in project.contributions" :key="index" v-html="contribution"/>
             </ul>
@@ -70,10 +71,12 @@
         
         <!-- Navigation -->
         <div class="navigation">
-            <sui-button class="navigation-previous" v-if="projectIndex != 0"
+            <sui-button v-if="projectIndex != 0" 
+                class="navigation-previous"
                 color="grey" size="large" icon="left arrow" 
                 @click="$router.push('/project/' + getProjectName(projectIndex - 1))"/>
-            <sui-button class="navigation-next" v-if="projectIndex != $store.getters.projects.length - 1" 
+            <sui-button v-if="projectIndex != $store.getters.projects.length - 1" 
+                class="navigation-next"
                 color="grey" size="large" icon="right arrow" 
                 @click="$router.push('/project/' + getProjectName(projectIndex + 1))"/>
         </div>

@@ -9,7 +9,7 @@
         </div>
         <!-- Milestones-->
         <div class="career-section-milestones">
-          <div class="milestone" v-for="(milestone, index) in careerSection.milestones" :key="index">
+          <div v-for="(milestone, index) in careerSection.milestones" :key="index" class="milestone">
             <!-- Time (landscape)-->
             <div v-if="$isLandscape()" class="milestone-date">
               {{milestone.time}}

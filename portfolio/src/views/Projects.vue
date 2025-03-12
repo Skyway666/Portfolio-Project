@@ -10,10 +10,11 @@
         <!-- Grid -->
         <div class="projects-grid">
             <!-- Project -->
-            <div class="project" v-for="(project, index) in $store.getters.projects" :key="index"
+            <div v-for="(project, index) in $store.getters.projects" :key="index"
+              class="project"
               @click="onProjectClicked(project.name)">
               <!-- Image -->
-              <img :src="project.thumbnail" class="project-image" @load="resizeImageToContainer($event)"/>
+              <img class="project-image" :src="project.thumbnail" @load="resizeImageToContainer($event)"/>
               <!-- Overlay -->
               <div class="project-overlay" >
                   <div class="project-title">{{project.title}}</div>

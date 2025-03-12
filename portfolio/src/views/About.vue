@@ -6,7 +6,7 @@
     <div class="main-subtitle">Besides a <b>pro</b>fessional</div>
 
     <!-- Sections -->
-    <div :class="'section ' + (index % 2 != 0 ? 'odd' : 'even')" v-for="(section, index) in sections" :key="index">
+    <div v-for="(section, index) in sections" :key="index" :class="'section ' + (index % 2 != 0 ? 'odd' : 'even')">
       <div class="section-text">
         <div class="section-title">{{ section.title }}</div>
         <div class="section-subtitle">{{ section.subtitle }}</div>
