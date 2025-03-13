@@ -89,7 +89,7 @@
     }
     .carousel {
         height: 100%;
-        width: 30%;
+        width: 25%;
         cursor: pointer;
     }
     .content {
