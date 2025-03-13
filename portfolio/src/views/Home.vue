@@ -3,7 +3,13 @@
         <Carousel
             v-if="$isLandscape()"
             class="carousel"
-            :images="$store.state.projects.map((project) => project.thumbnail)"
+            :images="
+                $store.state.projects
+                    .map((project) => project.thumbnail)
+                    .sort(() => Math.random() - 0.5)
+            "
+            invertDirection
+            @click="$router.push('/projects')"
         />
         <div class="content">
             <!-- Title -->
@@ -35,7 +41,13 @@
         </div>
         <Carousel
             class="carousel"
-            :images="$store.state.projects.map((project) => project.thumbnail)"
+            :images="
+                $store.state.projects
+                    .map((project) => project.thumbnail)
+                    .sort(() => Math.random() - 0.5)
+            "
+            :horizontal="$isLandscape() ? false : true"
+            @click="$router.push('/projects')"
         />
     </div>
 </template>
@@ -78,6 +90,7 @@
     .carousel {
         height: 100%;
         width: 30%;
+        cursor: pointer;
     }
     .content {
         max-width: 33%;
@@ -102,7 +115,7 @@
         }
         .carousel {
             margin-top: 30px;
-            height: 50vh;
+            height: 40vh;
             width: 100%;
         }
     }
