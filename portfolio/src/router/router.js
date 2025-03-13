@@ -14,7 +14,7 @@ const routes = [
         path: "/",
         name: "home",
         component: Home,
-        meta: { mainViewClass: "main-view-narrow" },
+        meta: { mainViewClass: "" },
     },
     {
         path: "/projects",
