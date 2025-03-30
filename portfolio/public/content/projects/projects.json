@@ -190,6 +190,83 @@
       ]
     },
     {
+      "name": "western-pinball",
+      "title": "Western Pinball",
+      "shortDescription": "Pinball built in C++",
+      "thumbnail": "./content/projects/WesternPinballLogo.png",
+      "specifications": {
+        "year": "2017",
+        "duration": "1 months",
+        "teamSize": "2"
+      },
+      "longDescription": "Basic pinball game to showcase the implementation of the Box2D physics library in C++ for the \"Physics 2\" subject.",
+      "layoutMedia": [
+        {
+          "type": "VIDEO",
+          "src": "https://www.youtube.com/embed/7x9wMUqxHI0?si=OEvg_UEz7tMnGH5H"
+        }
+      ],
+      "linkButtons": [
+        {
+          "text": "Repository",
+          "link": "https://github.com/Skyway666/Physics-2----Pinball"
+        },
+        {
+          "text": "Release",
+          "link": "https://github.com/Skyway666/Physics-2----Pinball/releases/tag/1.0"
+        }
+      ],
+      "tags": [
+        "Programming",
+        "C++",
+        "Education",
+        "CITM",
+        "Physics"
+      ],
+      "contributions": [
+        
+      ]
+    },
+    {
+      "name": "who-let-the-dog-jump",
+      "title": "Who Let The Dog Jump?",
+      "shortDescription": "2D platformer built in C++",
+      "thumbnail": "./content/projects/WLTDJLogo.png",
+      "specifications": {
+        "year": "2018",
+        "duration": "3 months",
+        "teamSize": "2"
+      },
+      "longDescription": "2D platformer developed as a showcase of the following videogame subsystems taught in the \"Development\" subject:\n- File loading/saving\n- 2D Physics\n- Pathfinding\n- UI",
+      "layoutMedia": [
+        {
+          "type": "VIDEO",
+          "src": "https://www.youtube.com/embed/N-DDTzSzeDo?si=tV9pm5odcqFzsftT"
+        }
+      ],
+      "linkButtons": [
+        {
+          "text": "Webpage",
+          "link": "https://skyway666.github.io/Assignment-3--UI/"
+        }
+      ],
+      "tags": [
+        "Programming",
+        "C++",
+        "Education",
+        "CITM",
+        "Development"
+      ],
+      "contributions": [
+        "Map and colliders loading from XML",
+        "Load / Save methods for player and maps",
+        "Entity system",
+        "Flying enemies",
+        "User Interface system",
+        "Main menu, options and pause windows"
+      ]
+    },
+    {
       "name": "dungeon-brawler",
       "title": "Dungeon Brawler",
       "shortDescription": "Competitive 2D fighting game, built in C++",
