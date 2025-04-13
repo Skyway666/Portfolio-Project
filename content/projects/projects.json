@@ -435,6 +435,39 @@
       ]
     },
     {
+      "name": "spacedrone-party",
+      "title": "Spacedrone Party",
+      "shortDescription": "1 v 1 multiplayer game, built with Unity",
+      "thumbnail": "./content/projects/SDPLogo.png",
+      "specifications": {
+        "year": "2019",
+        "duration": "1 month",
+        "teamSize": "1"
+      },
+      "longDescription": "Spacedrone Party is the final assignment for the \"Networks\" subject. Each player controlls a shooting drone in space, racking up score by shooting down blue objectives, collecting the green ones and avoid getting hit by the black walls.\n\nThis project's main purpose was learning how to use the <a href=\"https://docs.unity3d.com/2020.1/Documentation/Manual/UNetUsingHLAPI.html\">Multiplayer HLAPI</a>, but as a bonus I decided to challenge myself with the implementation of a smooth drone controller, since I had carried out a study about them in highschool and felt I had enought knowledge to implement it.",
+      "layoutMedia": [
+        {
+          "type": "VIDEO",
+          "src": "https://www.youtube.com/embed/sJ9bRyeL9ZU?si=tcurLPC3-4brebIA"
+        }
+      ],
+      "linkButtons": [
+        {
+          "text": "Repository",
+          "link": "https://github.com/Skyway666/Unity-Multiplayer-Game"
+        }
+      ],
+      "tags": [
+        "Programming",
+        "Unity",
+        "Education",
+        "CITM",
+        "Networks"
+      ],
+      "contributions": [
+      ]
+    },
+    {
       "name": "asun",
       "title": "Asun",
       "shortDescription": "First edition of the Gran CITM game jam with the theme \"Surprise\" (\"Sorpresa\" in Spanish)",
